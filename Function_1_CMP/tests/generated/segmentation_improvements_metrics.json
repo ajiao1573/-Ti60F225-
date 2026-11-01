@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "baseline_cycles": 649582,
+      "improved_cycles": 412758,
+      "reduction_percent": 36.46
+    },
+    {
+      "case": 1,
+      "baseline_cycles": 342966,
+      "improved_cycles": 233086,
+      "reduction_percent": 32.04
+    },
+    {
+      "case": 2,
+      "baseline_cycles": 481549,
+      "improved_cycles": 333249,
+      "reduction_percent": 30.8
+    },
+    {
+      "case": 3,
+      "baseline_cycles": 364690,
+      "improved_cycles": 243453,
+      "reduction_percent": 33.24
+    },
+    {
+      "case": 4,
+      "baseline_cycles": 650791,
+      "improved_cycles": 413423,
+      "reduction_percent": 36.47
+    },
+    {
+      "case": 5,
+      "baseline_cycles": 650791,
+      "improved_cycles": 413423,
+      "reduction_percent": 36.47
+    }
+  ],
+  "ram_blocks": 236,
+  "ram_capacity": 256,
+  "setup_min_ns": 0.305,
+  "hold_min_ns": 0.026,
+  "on_board_validated": false,
+  "bitstream": "output/segmentation_v2/Ti60_Demo.bit"
+}

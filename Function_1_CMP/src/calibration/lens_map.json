@@ -1,0 +1,15 @@
+{
+  "profile": "docs\\calibration\\lens_profile_native1080.json",
+  "profile_sha256": "7f3b91fcfffd5e75c8994bfcf2a5dc8a54810e8337d9e956d9cabd7b44508d2e",
+  "rom_sha256": "ee4253702526a1040b861210e8b176ed0084af69f6382cee87726d14c5ef20fd",
+  "origin": [
+    -256,
+    -256
+  ],
+  "step": 64,
+  "columns": 39,
+  "rows": 26,
+  "fraction_bits": 8,
+  "coordinate_bits": 21,
+  "layout": "LSB: forward_x, forward_y, inverse_x, inverse_y (21 bits each)"
+}

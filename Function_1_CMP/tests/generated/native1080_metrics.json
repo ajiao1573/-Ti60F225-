@@ -1,0 +1,23 @@
+{
+  "input": [
+    1920,
+    1080
+  ],
+  "processing": [
+    1920,
+    1080
+  ],
+  "display": [
+    1920,
+    1080
+  ],
+  "pixels_per_frame": 2073600,
+  "ram_blocks": 190,
+  "ram_capacity": 256,
+  "setup_min_ns": 0.104,
+  "hold_min_ns": 0.007,
+  "jtag_loaded": true,
+  "user_confirmed_clearer_picture": true,
+  "pixel_history_enabled": false,
+  "ocr_accuracy_validated": false
+}

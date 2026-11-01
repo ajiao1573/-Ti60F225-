@@ -1,0 +1,15 @@
+{
+  "app.py": "8170b0f21eda454fc4f80a22087aa9d00e0a577f590be3272cb061ea75111b77",
+  "controller.py": "cf76daa5230f162b1940f3677f32e50b516d4536d55a03962e0359834fc352aa",
+  "protocol.py": "30654e2d1742c76df5be31fa53e25387e90fd2f65a57aa2715d1acf1b87ebd7a",
+  "static/index.html": "632e64c131d80ac2672fb96c8231e3e34d6253f66ad38632d8b880d8f84a13cc",
+  "static/app.js": "bfee988abed0488be9be08d4e1317567f1dd36b2bd42898bee972ca2950a2d36",
+  "static/style.css": "d70d5dacb0877a9125ebbcafd0fd138283023e030cf3882806e971faef3573e6",
+  "start_control.cmd": "1837c280bb2e7782bdc9c44a3fbfe11af6bdd44689ac502b55a0f3deba700485",
+  "build_exe.py": "42e3b251fa28c12b33fb75b685a87007660abb54907550b2b8bc2281fddb6047",
+  "README.md": "af888b29dc764ae31a21ab28d41c8fc016e14ecb952821ba89843687312e2a99",
+  "dist/Ti60PlateControl.exe": "059ec83044dd3f3fbf6d427a1e540285003eb2e001c2d28b9c4759fa245c97e9",
+  "tests/test_host.py": "dab374f5a8b394e12d58cb61d2d0c5cab163914491c4f617c2d992ca97e46f1b",
+  "tests/browser_smoke.cjs": "1fd81556a25a81b425ad5eaad18686a5182d398d3851eb3f5a77209fed885ca2",
+  "tests/ui_fixture.py": "e6e645d7d7a2748c913db299a4eaa338264680b7b1beeead31f9521f11943183"
+}

@@ -1,0 +1,28 @@
+{
+  "tag": "bound33",
+  "note": "exploratory bound",
+  "n_points": 318,
+  "checkpoints": 115,
+  "iterations": 3,
+  "med2": 921618,
+  "n_median_set": 127,
+  "features": {
+    "OUT_MAX": 52,
+    "IN_MAX": 14,
+    "OUT_FRAC": 674,
+    "IN_FRAC": 117,
+    "OUT_AREA": 11,
+    "OUT_STD": 26,
+    "OUT_RUN": 10,
+    "COVER": 171,
+    "GCONTRAST": 40,
+    "GWEAK8": 26,
+    "PROTECT": 907,
+    "ARATIO": 1710,
+    "RN": 374
+  },
+  "n_admit": 79,
+  "reason": "ok",
+  "classifier_accumulator": 29318877,
+  "predicted": "NG"
+}

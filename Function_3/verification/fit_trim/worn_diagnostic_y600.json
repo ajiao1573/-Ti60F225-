@@ -1,0 +1,28 @@
+{
+  "tag": "worn_diagnostic_y600",
+  "note": "diagnostic only; not hardware",
+  "n_points": 245,
+  "checkpoints": 115,
+  "iterations": 3,
+  "med2": -96396,
+  "n_median_set": 245,
+  "features": {
+    "OUT_MAX": 10,
+    "IN_MAX": 9,
+    "OUT_FRAC": 33,
+    "IN_FRAC": 4,
+    "OUT_AREA": 0,
+    "OUT_STD": 3,
+    "OUT_RUN": 2,
+    "COVER": 532,
+    "GCONTRAST": 55,
+    "GWEAK8": 27,
+    "PROTECT": 986,
+    "ARATIO": 1148,
+    "RN": 288
+  },
+  "n_admit": 245,
+  "reason": "ok",
+  "classifier_accumulator": -5325003,
+  "predicted": "OK"
+}

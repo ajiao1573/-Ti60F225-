@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "elapsed_seconds": 475.55,
+  "input": [
+    1920,
+    1080
+  ],
+  "processing": [
+    848,
+    477
+  ],
+  "clock_hz": 84000000,
+  "hts": 2500,
+  "vts": 1120,
+  "fps": 30,
+  "frames": 2,
+  "pixels_per_frame": 404496,
+  "threshold": 27,
+  "constant_edges": 0,
+  "step_edges": 475,
+  "step_rows": 475,
+  "scope": "RGB input through actual denoise/resize/autoplate RTL; not DVP, Bayer, DDR or HDMI physical validation",
+  "source_sha256": {
+    "src/camera_rgb_denoise.v": "c64d8c71fd01b96e21fcd8d4b68acbc1fd6dd32b595596ce90c65ae2e1cb3f70",
+    "src/camera_rgb_smooth.v": "8af4e65796064b7d6b6b2dfa3fe91f14462e8771e860fe0208596ced97c6320e",
+    "src/camera_full_view.v": "e833f4013d55d2b71bf8727739954d491a4199f6d2305e393d65ca5d0c360091",
+    "src/autoplate_core.v": "3c3f370bb724dcbaaea9441ba2aec02586956fcae19706f2d53d423789ae189a",
+    "src/plate_locator.v": "d6a7be0e3009ea74977c583a5824893acaf401847f2b2595010839adc85ced11",
+    "src/plate_segmenter.v": "3093421b30fe110f528750d44595a8ca5cb5e21bce6e5cb55b1baaeda353ca36",
+    "src/canny/canny_frame.v": "2578745022af28a8eeb27f485c7bd5404ac1d41be6505ab5789330a2ac65caa8",
+    "src/canny/canny_frontend.v": "37ba2651a240528eff5a1b3b0587cf25e24a9ebbf525edb05c30d15facbebe51",
+    "src/canny/canny_gaussian3.v": "887bafc8d93f5abfd7b5793de7a0b48c5e59a8e7093b00799ffb893fa5cfd876",
+    "src/canny/canny_hysteresis.v": "bac0051a8aa005737a1c441932170d1db4046f0788ca2cc5adc8c3ff95470d1d",
+    "src/canny/canny_local_link.v": "5d5589b64b78057b74d89623369fb36d89edd31ee330ebd963c296847cd69db7",
+    "src/canny/canny_median3.v": "a141198a2a959f6a92f656a3230a3e6613a37cf62ab237957a430231754d7aad",
+    "src/canny/canny_peak_history.v": "1d1acdc6a0f4d5576018b733cb8dff7b2da8ebee83de6cdd8c9e0298ef827d8c",
+    "src/canny/canny_window.v": "3a54d4aaa0b373d17c87956526d4af877efe6e916260db48275b02b159a2b58e"
+  },
+  "hardware_test": false
+}

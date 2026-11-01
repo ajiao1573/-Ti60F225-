@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "sys_period_ns": 10,
+  "cam_period_ns": 14,
+  "clock_hz_timeout_parameter": 1000000,
+  "fixed_heartbeat_bit": 16,
+  "atomic_snapshots": 80,
+  "atomic_bytes_checked": 3840,
+  "reset_scope": "both domains together; product shared reset",
+  "hardware_test": false,
+  "applied_commands": 10,
+  "pending_command_discarded_by_reset": 1
+}

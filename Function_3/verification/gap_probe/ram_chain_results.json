@@ -1,0 +1,44 @@
+[
+  {
+    "name": "NG_cast_def_0_1261.jpeg",
+    "pass": true,
+    "class": "NG",
+    "acc": 4498104
+  },
+  {
+    "name": "NG_cast_def_0_1446.jpeg",
+    "pass": true,
+    "class": "NG",
+    "acc": 9154905
+  },
+  {
+    "name": "NG_cast_def_0_5244.jpeg",
+    "pass": true,
+    "class": "NG",
+    "acc": 2940774
+  },
+  {
+    "name": "OK_cast_ok_0_1074.jpeg",
+    "pass": true,
+    "class": "OK",
+    "acc": -6298217
+  },
+  {
+    "name": "OK_cast_ok_0_129.jpeg",
+    "pass": true,
+    "class": "OK",
+    "acc": -5517479
+  },
+  {
+    "name": "OK_cast_ok_0_1853.jpeg",
+    "pass": true,
+    "class": "OK",
+    "acc": -5721957
+  },
+  {
+    "name": "worn",
+    "pass": true,
+    "class": "OK",
+    "acc": -5325003
+  }
+]

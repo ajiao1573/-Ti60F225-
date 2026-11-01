@@ -1,0 +1,6787 @@
+{
+  "scene": "User confirmed NO plate present during these trials. Negative-scene observations only; not recognition failures.",
+  "trials": [
+    {
+      "trial": 1,
+      "seconds": 5.025,
+      "plate": null,
+      "correct": false,
+      "samples": [
+        {
+          "state": 5,
+          "characters": 6,
+          "reject_reason": 0,
+          "capture_frame_id": 2639,
+          "plate": "OR2972",
+          "bbox": {
+            "x": 16,
+            "y": 68,
+            "width": 656,
+            "height": 252
+          }
+        },
+        {
+          "state": 5,
+          "characters": 6,
+          "reject_reason": 0,
+          "capture_frame_id": 2639,
+          "plate": "OR2972",
+          "bbox": {
+            "x": 16,
+            "y": 68,
+            "width": 656,
+            "height": 252
+          }
+        },
+        {
+          "state": 5,
+          "characters": 6,
+          "reject_reason": 0,
+          "capture_frame_id": 2639,
+          "plate": "OR2972",
+          "bbox": {
+            "x": 16,
+            "y": 68,
+            "width": 656,
+            "height": 252
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2641,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2649,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2649,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2649,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2649,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2657,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 448,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2657,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 448,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2657,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 448,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2657,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 448,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2665,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2665,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2665,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2665,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2665,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2665,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2673,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2673,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2673,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2681,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2690,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2690,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2690,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2690,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2698,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2698,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2698,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2698,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2706,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2706,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2706,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2714,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2714,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2714,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2722,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2730,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2730,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2730,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2730,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2738,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2747,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2747,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2747,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2747,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2756,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2756,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2756,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2756,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2764,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2772,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2772,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2772,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2772,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2781,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 132
+          }
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "seconds": 5.045,
+      "plate": null,
+      "correct": false,
+      "samples": [
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2781,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2789,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2789,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2789,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2793,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2801,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2801,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2801,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2809,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 112
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2809,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 112
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2809,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 112
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2809,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 112
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2817,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2827,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2827,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2827,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2835,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2835,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2835,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2835,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2844,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2853,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2853,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 2853,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 96
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2862,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2862,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2862,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2864,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2864,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2864,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2864,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2873,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2873,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2873,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2881,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 40,
+            "width": 112,
+            "height": 64
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2881,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 40,
+            "width": 112,
+            "height": 64
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2881,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 40,
+            "width": 112,
+            "height": 64
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2881,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 40,
+            "width": 112,
+            "height": 64
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2883,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2883,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2883,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2883,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2893,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2901,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2901,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2901,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2901,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2909,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2909,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 2909,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2917,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2925,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2925,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2925,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2925,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2933,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "seconds": 5.02,
+      "plate": null,
+      "correct": false,
+      "samples": [
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2933,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2933,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2933,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2933,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2933,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 2942,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2955,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2955,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 2955,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2964,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2972,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2972,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2972,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2980,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2980,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2980,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 2980,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 2989,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 2989,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 2989,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 2989,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2990,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2990,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 2990,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3001,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 104
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3010,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3010,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3010,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3018,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3018,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3018,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3018,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 132
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3025,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3025,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3025,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3025,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3026,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3026,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3026,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3034,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 120
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3034,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 120
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3034,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 120
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3034,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 120
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 84
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3042,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3055,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3065,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3065,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3065,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3065,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3073,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3073,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3073,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3073,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3073,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3073,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3082,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        }
+      ]
+    },
+    {
+      "trial": 4,
+      "seconds": 5.032,
+      "plate": null,
+      "correct": false,
+      "samples": [
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3091,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3091,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3091,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3091,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3091,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3093,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3093,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3093,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3101,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3101,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3101,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3101,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3109,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3121,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3121,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3121,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3124,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3124,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3124,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3133,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3133,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3133,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3133,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3142,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3150,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3161,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3161,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3161,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 424,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3169,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3169,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3169,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3169,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3178,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3178,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3178,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3182,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3182,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3182,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3182,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 3189,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 3189,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 7,
+          "reject_reason": 3,
+          "capture_frame_id": 3189,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3191,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3191,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3191,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3199,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3199,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3199,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3199,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3208,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3216,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3216,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3216,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 84
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3224,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3224,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3224,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3232,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3232,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3232,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3232,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        }
+      ]
+    },
+    {
+      "trial": 5,
+      "seconds": 5.032,
+      "plate": null,
+      "correct": false,
+      "samples": [
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3241,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3241,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3244,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3252,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 136
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3252,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 136
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3252,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 136
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3252,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 136
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3261,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3269,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3269,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3269,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3269,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3278,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3278,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3278,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3286,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3294,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3294,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3294,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 3302,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 3302,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 3302,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 3302,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3310,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3318,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3318,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3318,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3318,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 132
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3326,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3326,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3326,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3334,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3343,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3343,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3343,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 92
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3352,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3352,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3352,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3352,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3360,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3360,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3360,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3366,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3374,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3374,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3374,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3382,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3382,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3382,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 100
+          }
+        }
+      ]
+    },
+    {
+      "trial": 6,
+      "seconds": 5.048,
+      "plate": null,
+      "correct": false,
+      "samples": [
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3390,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 2,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3390,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3395,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3404,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3404,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3404,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3414,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 60
+          }
+        },
+        {
+          "state": 2,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3414,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 60
+          }
+        },
+        {
+          "state": 2,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3414,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 60
+          }
+        },
+        {
+          "state": 2,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3414,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 60
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3417,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3417,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3417,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3417,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3426,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3426,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3426,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 116
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3426,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3426,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 2,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3426,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3434,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3434,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3434,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3434,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 456,
+            "height": 96
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3443,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3443,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3443,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3451,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3459,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3459,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3459,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3467,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3467,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3467,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 3,
+          "reject_reason": 3,
+          "capture_frame_id": 3467,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3474,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 432,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3483,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3483,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 1,
+          "reject_reason": 3,
+          "capture_frame_id": 3483,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 80
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3491,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 64
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3491,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 64
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3491,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 64
+          }
+        },
+        {
+          "state": 2,
+          "characters": 2,
+          "reject_reason": 3,
+          "capture_frame_id": 3491,
+          "plate": null,
+          "bbox": {
+            "x": 416,
+            "y": 44,
+            "width": 120,
+            "height": 64
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3495,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3495,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3495,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 4,
+          "reject_reason": 3,
+          "capture_frame_id": 3495,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3504,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 2,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3519,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 2,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3519,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 2,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3519,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 2,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3519,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3521,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3521,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3521,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 6,
+          "reject_reason": 4,
+          "capture_frame_id": 3521,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 88
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3529,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3529,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 0,
+          "reject_reason": 3,
+          "capture_frame_id": 3529,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 408,
+            "height": 124
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 3537,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        },
+        {
+          "state": 1,
+          "characters": 5,
+          "reject_reason": 3,
+          "capture_frame_id": 3537,
+          "plate": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 80
+          }
+        }
+      ]
+    }
+  ]
+}

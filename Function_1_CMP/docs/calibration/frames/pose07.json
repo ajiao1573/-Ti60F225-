@@ -1,0 +1,13 @@
+{
+  "file": "docs\\calibration\\frames\\pose07.png",
+  "size": [
+    320,
+    180
+  ],
+  "source_size": [
+    1920,
+    1080
+  ],
+  "source_sample_step": 6,
+  "checkerboard_found": true
+}

@@ -6,6 +6,7 @@
 /Function_*/output/
 /Function_*/combined_output/
 /Function_*/logs/
+/Function_*/ip/**/work/
 
 # Generated simulation files and bitstreams.
 *.vvp
@@ -15,7 +16,7 @@
 
 # Python caches and local virtual environments.
 __pycache__/
-*.py[cod]
+*.py[co]
 .pytest_cache/
 .venv/
 venv/

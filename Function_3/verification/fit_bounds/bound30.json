@@ -1,0 +1,14 @@
+{
+  "tag": "bound30",
+  "note": "exploratory bound",
+  "n_points": 318,
+  "checkpoints": 45,
+  "iterations": 0,
+  "med2": null,
+  "n_median_set": null,
+  "features": null,
+  "n_admit": null,
+  "reason": "ill_conditioned",
+  "classifier_accumulator": null,
+  "predicted": "UNCLASSIFIED"
+}

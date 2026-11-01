@@ -1,0 +1,900 @@
+[
+  {
+    "width": 48,
+    "height": 32,
+    "frames": 55,
+    "partial_word": 0,
+    "history_tokens": 78336,
+    "frames_metrics": [
+      {
+        "frame": 0,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 1,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 2,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 3,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 4,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 5,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 6,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 7,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 80,
+        "strong": 70
+      },
+      {
+        "frame": 8,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 65,
+        "strong": 60
+      },
+      {
+        "frame": 9,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 64,
+        "strong": 57
+      },
+      {
+        "frame": 10,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 61,
+        "strong": 56
+      },
+      {
+        "frame": 11,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 62,
+        "strong": 56
+      },
+      {
+        "frame": 12,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 13,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 14,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 15,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 16,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 17,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "flat",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 18,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "flat",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 19,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "flat",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 20,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 21,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 22,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 23,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 24,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 25,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 26,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 29,
+        "strong": 28
+      },
+      {
+        "frame": 27,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 28,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 29,
+        "strong": 27
+      },
+      {
+        "frame": 29,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 30,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 31,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 32,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 33,
+        "mode": 0,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 65,
+        "strong": 65
+      },
+      {
+        "frame": 34,
+        "mode": 0,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 72,
+        "strong": 72
+      },
+      {
+        "frame": 35,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 36,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 37,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 38,
+        "mode": 1,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 120,
+        "strong": 120
+      },
+      {
+        "frame": 39,
+        "mode": 1,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 120,
+        "strong": 120
+      },
+      {
+        "frame": 40,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 41,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 42,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 43,
+        "mode": 3,
+        "threshold": 0,
+        "scene": "noise",
+        "edges": 468,
+        "strong": 450
+      },
+      {
+        "frame": 44,
+        "mode": 3,
+        "threshold": 0,
+        "scene": "noise",
+        "edges": 551,
+        "strong": 526
+      },
+      {
+        "frame": 45,
+        "mode": 3,
+        "threshold": 0,
+        "scene": "noise",
+        "edges": 580,
+        "strong": 562
+      },
+      {
+        "frame": 46,
+        "mode": 3,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 47,
+        "mode": 3,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 48,
+        "mode": 2,
+        "threshold": 0,
+        "scene": "strong",
+        "edges": 352,
+        "strong": 325
+      },
+      {
+        "frame": 49,
+        "mode": 2,
+        "threshold": 0,
+        "scene": "strong",
+        "edges": 453,
+        "strong": 429
+      },
+      {
+        "frame": 50,
+        "mode": 2,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 51,
+        "mode": 2,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 52,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 30,
+        "strong": 28
+      },
+      {
+        "frame": 53,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 31,
+        "strong": 29
+      },
+      {
+        "frame": 54,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 31,
+        "strong": 29
+      }
+    ]
+  },
+  {
+    "width": 35,
+    "height": 23,
+    "frames": 55,
+    "partial_word": 5,
+    "history_tokens": 41055,
+    "frames_metrics": [
+      {
+        "frame": 0,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 1,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 2,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 3,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 4,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 5,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 6,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 7,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 55,
+        "strong": 40
+      },
+      {
+        "frame": 8,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 49,
+        "strong": 42
+      },
+      {
+        "frame": 9,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 43,
+        "strong": 38
+      },
+      {
+        "frame": 10,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 43,
+        "strong": 38
+      },
+      {
+        "frame": 11,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 43,
+        "strong": 38
+      },
+      {
+        "frame": 12,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 13,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 14,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 15,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 16,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "move",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 17,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "flat",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 18,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "flat",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 19,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "flat",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 20,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 21,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 22,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 23,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 24,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 25,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 26,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 27,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 28,
+        "mode": 2,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 29,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 30,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 31,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 32,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 33,
+        "mode": 0,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 44,
+        "strong": 44
+      },
+      {
+        "frame": 34,
+        "mode": 0,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 50,
+        "strong": 50
+      },
+      {
+        "frame": 35,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 36,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 37,
+        "mode": 3,
+        "threshold": 22,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 38,
+        "mode": 1,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 84,
+        "strong": 84
+      },
+      {
+        "frame": 39,
+        "mode": 1,
+        "threshold": 27,
+        "scene": "thin",
+        "edges": 84,
+        "strong": 84
+      },
+      {
+        "frame": 40,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 41,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 42,
+        "mode": 2,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 43,
+        "mode": 3,
+        "threshold": 0,
+        "scene": "noise",
+        "edges": 242,
+        "strong": 223
+      },
+      {
+        "frame": 44,
+        "mode": 3,
+        "threshold": 0,
+        "scene": "noise",
+        "edges": 282,
+        "strong": 265
+      },
+      {
+        "frame": 45,
+        "mode": 3,
+        "threshold": 0,
+        "scene": "noise",
+        "edges": 298,
+        "strong": 283
+      },
+      {
+        "frame": 46,
+        "mode": 3,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 47,
+        "mode": 3,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 48,
+        "mode": 2,
+        "threshold": 0,
+        "scene": "strong",
+        "edges": 160,
+        "strong": 142
+      },
+      {
+        "frame": 49,
+        "mode": 2,
+        "threshold": 0,
+        "scene": "strong",
+        "edges": 224,
+        "strong": 210
+      },
+      {
+        "frame": 50,
+        "mode": 2,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 51,
+        "mode": 2,
+        "threshold": 1023,
+        "scene": "strong",
+        "edges": 0,
+        "strong": 0
+      },
+      {
+        "frame": 52,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 53,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      },
+      {
+        "frame": 54,
+        "mode": 3,
+        "threshold": 27,
+        "scene": "weak",
+        "edges": 21,
+        "strong": 19
+      }
+    ]
+  }
+]

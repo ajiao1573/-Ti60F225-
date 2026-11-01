@@ -1,0 +1,20 @@
+[
+  {
+    "name": "autoplate_core_small",
+    "width": 384,
+    "height": 193,
+    "cases": [
+      "AUY359",
+      "AUY359",
+      "TR7750"
+    ]
+  },
+  {
+    "name": "autoplate_core_full",
+    "width": 848,
+    "height": 477,
+    "cases": [
+      "AUY359"
+    ]
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "edge_threshold": 27,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 3,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 196
+    },
+    "capture_frame_id": 480316,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 45,
+    "characters": 2,
+    "reject_reason": 3,
+    "location_reason": 3,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480327,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 45,
+    "characters": 2,
+    "reject_reason": 3,
+    "location_reason": 3,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480335,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 45,
+    "characters": 3,
+    "reject_reason": 3,
+    "location_reason": 3,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480343,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 45,
+    "characters": 3,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480343,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 45,
+    "characters": 1,
+    "reject_reason": 3,
+    "location_reason": 3,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480361,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 70,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480368,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 70,
+    "characters": 1,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480380,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 70,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480386,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 70,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480392,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 70,
+    "characters": 1,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480398,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 70,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 1,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480404,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 100,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 100,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 100,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 100,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 100,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 100,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 150,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 150,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 150,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 150,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 150,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 150,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 200,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 200,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 200,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 200,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 200,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  },
+  {
+    "edge_threshold": 200,
+    "characters": 0,
+    "reject_reason": 3,
+    "location_reason": 0,
+    "bbox": {
+      "x": 0,
+      "y": 20,
+      "width": 424,
+      "height": 148
+    },
+    "capture_frame_id": 480414,
+    "ascii_diagnostic": "??????",
+    "recognized": false
+  }
+]

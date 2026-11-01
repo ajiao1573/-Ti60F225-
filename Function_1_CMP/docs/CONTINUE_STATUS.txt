@@ -1,0 +1,9 @@
+2026-10-29 continuation:
+Product project ti60_B_web_autoplate_20261028.
+Compile current session55828 active: full compile build_final_b.log, map PASS RAM238. Placement preliminary PASS frequencies, routing active. Need final route setup/hold and bit.
+Original compile crashed 0xc00000fd in camera_rgb_smooth nested min3/max3. Fixed only equivalent intermediate wires (no algorithm change). Current source differs from A syntactically; b30 pipeline rerun session55597 active, generated log currently buffered. Need await.
+Agent /root/ocr_calibration pending_init (as of latest list), assigned extra glyph template calibration. Existing359 templates unchanged. Wait agent before final ROM freeze and final compile; current compile oldROM is useful timing check. Remaining DMN/FAR/OI new pipeline variants not yet solved, do not claim5/5.
+Created README_使用说明.md and docs/VALIDATION.md. Need finalize docs with actual results and packaging source+new bit+hostEXE. Host17tests and browser previously PASS.
+No final delivery zip produced. No board testing.
+
+Latest: first fullcompile PASS bit2862033 bytes dated23:47, BUT final STA pixel->camera display_meta_cam setup -0.800ns. Do not deliver it as final. Path is bundled-data status_snapshot held53 bus sampled after3ackFF. Added local max20ns/min0 to display_meta_cam*~FF|D plus falsepath only ack_sync[0] and box/request_sync[0] from pixel clock. Current pnr rerun session34092 build_pnr_mailbox.log; check exact get_pins matches then all setup/hold. Need run pgm after successful pnr. b30 rerun session55597 vvp6956 still running444 CPU seconds, buffered log; do not duplicate. Agentocr_calibration remains pending_init, no ROM updates yet.

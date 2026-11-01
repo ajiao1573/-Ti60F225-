@@ -1,0 +1,117 @@
+[
+  {
+    "plate": "AUY359",
+    "photo_box": [
+      40,
+      36,
+      216,
+      72
+    ],
+    "glyph_box": [
+      52,
+      48,
+      245,
+      96
+    ],
+    "candidate": [
+      24,
+      24,
+      240,
+      96
+    ],
+    "glyph_coverage": 1.0,
+    "candidate_count": 1
+  },
+  {
+    "plate": "DMN112",
+    "photo_box": [
+      104,
+      96,
+      216,
+      72
+    ],
+    "glyph_box": [
+      116,
+      109,
+      306,
+      153
+    ],
+    "candidate": [
+      88,
+      84,
+      240,
+      96
+    ],
+    "glyph_coverage": 1.0,
+    "candidate_count": 1
+  },
+  {
+    "plate": "FAR441",
+    "photo_box": [
+      40,
+      36,
+      216,
+      72
+    ],
+    "glyph_box": [
+      50,
+      51,
+      234,
+      94
+    ],
+    "candidate": [
+      24,
+      24,
+      248,
+      96
+    ],
+    "glyph_coverage": 1.0,
+    "candidate_count": 1
+  },
+  {
+    "plate": "TR7750",
+    "photo_box": [
+      104,
+      96,
+      216,
+      72
+    ],
+    "glyph_box": [
+      114,
+      107,
+      309,
+      156
+    ],
+    "candidate": [
+      96,
+      84,
+      232,
+      96
+    ],
+    "glyph_coverage": 1.0,
+    "candidate_count": 1
+  },
+  {
+    "plate": "OI7105",
+    "photo_box": [
+      40,
+      36,
+      216,
+      72
+    ],
+    "glyph_box": [
+      51,
+      48,
+      246,
+      95
+    ],
+    "candidate": [
+      32,
+      28,
+      232,
+      88
+    ],
+    "glyph_coverage": 1.0,
+    "candidate_count": 1
+  }
+]

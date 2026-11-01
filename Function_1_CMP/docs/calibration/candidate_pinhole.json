@@ -1,0 +1,50 @@
+{
+  "model": "pinhole",
+  "image_size": [
+    1920,
+    1080
+  ],
+  "camera_matrix": [
+    [
+      2290.9347763265896,
+      0.0,
+      946.5689294033366
+    ],
+    [
+      0,
+      2291.3384632974644,
+      570.894691080643
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "distortion_coefficients": [
+    -0.3941783996744122,
+    -0.010508829236389797,
+    0.0005992636723245479,
+    -0.0007202768686834421,
+    1.1820158189083958
+  ],
+  "calibration_size": [
+    320,
+    180
+  ],
+  "reprojection_rms_pixels": 0.06993674032802442,
+  "native_reprojection_rms_pixels": 0.4196204419681465,
+  "views": [
+    "docs\\calibration\\frames\\pose02.png",
+    "docs\\calibration\\frames\\pose03.png",
+    "docs\\calibration\\frames\\pose04.png",
+    "docs\\calibration\\frames\\pose05.png",
+    "docs\\calibration\\frames\\pose06.png",
+    "docs\\calibration\\frames\\pose07.png",
+    "docs\\calibration\\frames\\pose08.png",
+    "docs\\calibration\\frames\\pose09.png",
+    "docs\\calibration\\frames\\pose10.png",
+    "docs\\calibration\\frames\\preflight.png"
+  ],
+  "status": "candidate_requires_review_before_hardware_enable"
+}

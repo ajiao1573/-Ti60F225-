@@ -1,0 +1,609 @@
+--- baseline/example_top.v
++++ stable/example_top.v
+@@ -1064,7 +1064,7 @@
+ 	wire canny_capture_ready;
+ 	wire shape_busy;
+ 	wire canny_display_frame_toggle;
+-	canny_frame #(.WIDTH(960),.HEIGHT(720),.MEDIAN_ENABLE(ENABLE_MEDIAN),.CANNY_ENABLE(ENABLE_CANNY),.RUNTIME_MODES(1),.SOBEL_MAX_ENABLE(SOBEL_MAX_ENABLE),.ROBUST_NMS(1),.LOW_TIGHTEN(1),.BORDER_REFLECT(1),.NMS_TOLERANCE(4),.PROTECT_ENABLE(1),.COHERENT_PROTECT(1)) u_canny_frame (
++	canny_frame #(.WIDTH(960),.HEIGHT(720),.MEDIAN_ENABLE(ENABLE_MEDIAN),.CANNY_ENABLE(ENABLE_CANNY),.RUNTIME_MODES(1),.SOBEL_MAX_ENABLE(SOBEL_MAX_ENABLE),.ROBUST_NMS(1),.LOW_TIGHTEN(1),.BORDER_REFLECT(1),.NMS_TOLERANCE(4),.PROTECT_ENABLE(1),.COHERENT_PROTECT(1),.TEMPORAL_NMS(1)) u_canny_frame (
+ 	 .clk(cmos_pclk),.rst_n(rstn_sys),.capture_ready(canny_capture_ready && !shape_busy),
+ 	 .in_valid(roi_valid),.in_sop(roi_sop),.in_eop(roi_eop),.in_data(gray_data),
+ 	 .threshold(processing_threshold),.algorithm(spatial_algorithm),.frame_start(canny_frame_start),.busy(canny_busy),
+--- baseline/src/canny/canny_frame.v
++++ stable/src/canny/canny_frame.v
+@@ -3,7 +3,7 @@
+ // One accepted ROI at a time. Gray and edge streams belong to the SAME frame
+ // with gray during classification and edges two local-link windows later.
+ // DDR capture_ready remains low until both streams have committed to memory.
+-module canny_frame #(parameter WIDTH=848,HEIGHT=636,MEDIAN_ENABLE=1,CANNY_ENABLE=1,RUNTIME_MODES=0,SOBEL_MAX_ENABLE=0,ROBUST_NMS=0,LOW_TIGHTEN=0,BORDER_REFLECT=0,NMS_TOLERANCE=0,PROTECT_ENABLE=0,COHERENT_PROTECT=0)(
++module canny_frame #(parameter WIDTH=848,HEIGHT=636,MEDIAN_ENABLE=1,CANNY_ENABLE=1,RUNTIME_MODES=0,SOBEL_MAX_ENABLE=0,ROBUST_NMS=0,LOW_TIGHTEN=0,BORDER_REFLECT=0,NMS_TOLERANCE=0,PROTECT_ENABLE=0,COHERENT_PROTECT=0,TEMPORAL_NMS=0)(
+  input clk,input rst_n,input capture_ready,
+  input in_valid,input in_sop,input in_eop,input [7:0] in_data,
+  input [9:0] threshold,
+@@ -36,7 +36,7 @@
+    if(edge_valid && edge_eop) occupied<=0;
+   end
+  end
+- canny_frontend #(.WIDTH(WIDTH),.HEIGHT(HEIGHT),.MEDIAN_ENABLE(MEDIAN_ENABLE),.CANNY_ENABLE(CANNY_ENABLE),.RUNTIME_MODES(RUNTIME_MODES),.SOBEL_MAX_ENABLE(SOBEL_MAX_ENABLE),.ROBUST_NMS(ROBUST_NMS),.BORDER_REFLECT(BORDER_REFLECT),.NMS_TOLERANCE(NMS_TOLERANCE),.PROTECT_ENABLE(PROTECT_ENABLE),.COHERENT_PROTECT(COHERENT_PROTECT)) frontend(
++ canny_frontend #(.WIDTH(WIDTH),.HEIGHT(HEIGHT),.MEDIAN_ENABLE(MEDIAN_ENABLE),.CANNY_ENABLE(CANNY_ENABLE),.RUNTIME_MODES(RUNTIME_MODES),.SOBEL_MAX_ENABLE(SOBEL_MAX_ENABLE),.ROBUST_NMS(ROBUST_NMS),.BORDER_REFLECT(BORDER_REFLECT),.NMS_TOLERANCE(NMS_TOLERANCE),.PROTECT_ENABLE(PROTECT_ENABLE),.COHERENT_PROTECT(COHERENT_PROTECT),.TEMPORAL_NMS(TEMPORAL_NMS)) frontend(
+   .clk(clk),.rst_n(rst_n),.in_valid(take),.in_sop(frame_start),.in_eop(in_eop && take),.in_data(in_data),
+   .runtime_mode(frame_start ? algorithm : mode_latched),.low_threshold(low_latched),.high_threshold(high_latched),
+   .out_valid(gray_valid),.out_sop(gray_sop),.out_eop(gray_eop),.out_gray(gray_data),.out_class(classification),.out_protect(classification_protect));
+--- baseline/src/canny/canny_frontend.v
++++ stable/src/canny/canny_frontend.v
+@@ -4,7 +4,7 @@
+ // Default L1 mode remains available for historical bit-exact comparisons.
+ // Direction quantization uses tan(22.5 deg) ~= 106/256; image y points down.
+ // Thresholds are stable for the complete frame (latched by canny_frame).
+-module canny_frontend #(parameter WIDTH=848,HEIGHT=636,MEDIAN_ENABLE=1,GAUSSIAN_PASSES=2,RUNTIME_MODES=0,CANNY_ENABLE=1,SOBEL_MAX_ENABLE=0,ROBUST_NMS=0,BORDER_REFLECT=0,NMS_TOLERANCE=0,PROTECT_ENABLE=0,COHERENT_PROTECT=0)(
++module canny_frontend #(parameter WIDTH=848,HEIGHT=636,MEDIAN_ENABLE=1,GAUSSIAN_PASSES=2,RUNTIME_MODES=0,CANNY_ENABLE=1,SOBEL_MAX_ENABLE=0,ROBUST_NMS=0,BORDER_REFLECT=0,NMS_TOLERANCE=0,PROTECT_ENABLE=0,COHERENT_PROTECT=0,TEMPORAL_NMS=0)(
+  input clk,input rst_n,input in_valid,input in_sop,input in_eop,
+  input [7:0] in_data,input [1:0] runtime_mode,input [10:0] low_threshold,high_threshold,
+  output reg out_valid,output reg out_sop,output reg out_eop,
+@@ -97,23 +97,38 @@
+  wire [10:0] sobel_threshold=high_threshold;
+  generate if(CANNY_ENABLE) begin:nms_enabled
+  wire nv,ns,ne,nb;
+- localparam NW=COHERENT_PROTECT ? 22:21;
++ localparam BW=(COHERENT_PROTECT || TEMPORAL_NMS) ? 22:21;
++ localparam NW=BW+(TEMPORAL_NMS ? 1:0);
++ wire [BW-1:0] gradient_pixel={polarity,direction,magnitude,gray3};
++ wire [NW-1:0] nms_input;wire iv,is,ie;
++ if(TEMPORAL_NMS) begin:stable_history
++  canny_peak_history #(.WIDTH(WIDTH),.HEIGHT(HEIGHT),.DW(BW)) history(
++   .clk(clk),.rst_n(rst_n),.invalidate(!use_canny),
++   .in_valid(ctrl3[0] && use_canny),.in_sop(ctrl3[2]),.in_eop(ctrl3[1]),.in_data(gradient_pixel),
++   .configuration({runtime_mode,high_threshold}),
++   .feedback_valid(out_valid && use_canny),.feedback_sop(out_sop),.feedback_eop(out_eop),.feedback_seed(out_class==2),
++   .out_valid(iv),.out_sop(is),.out_eop(ie),.out_data(nms_input));
++ end else begin:no_stable_history
++  assign nms_input=gradient_pixel;assign iv=ctrl3[0] && use_canny;
++  assign is=ctrl3[2] && use_canny;assign ie=ctrl3[1] && use_canny;
++ end
+  wire [NW-1:0] n11,n12,n13,n21,n22,n23,n31,n32,n33;
+  canny_window #(.WIDTH(WIDTH),.HEIGHT(HEIGHT),.DW(NW)) nms_window(
+-  .clk(clk),.rst_n(rst_n),.in_valid(ctrl3[0] && use_canny),.in_sop(ctrl3[2] && use_canny),.in_eop(ctrl3[1] && use_canny),
+-  .in_data(COHERENT_PROTECT ? {polarity,direction,magnitude,gray3} : {1'b0,direction,magnitude,gray3}),
++  .clk(clk),.rst_n(rst_n),.in_valid(iv),.in_sop(is),.in_eop(ie),
++  .in_data(nms_input),
+   .out_valid(nv),.out_sop(ns),.out_eop(ne),.border(nb),
+   .p11(n11),.p12(n12),.p13(n13),.p21(n21),.p22(n22),.p23(n23),.p31(n31),.p32(n32),.p33(n33));
+- reg [10:0] na,nc;
++ reg [NW-1:0] normal_a,normal_c;
++ wire [10:0] na=normal_a[18:8],nc=normal_c[18:8];
+  wire [10:0] mag=n22[18:8];
+  wire [10:0] local_high=high_threshold;
+  wire [10:0] local_low=low_threshold;
+  always @* begin
+   case(n22[20:19])
+-   0:begin na=n21[18:8];nc=n23[18:8];end
+-   1:begin na=n11[18:8];nc=n33[18:8];end
+-   2:begin na=n12[18:8];nc=n32[18:8];end
+-   default:begin na=n13[18:8];nc=n31[18:8];end
++   0:begin normal_a=n21;normal_c=n23;end
++   1:begin normal_a=n11;normal_c=n33;end
++   2:begin normal_a=n12;normal_c=n32;end
++   default:begin normal_a=n13;normal_c=n31;end
+   endcase
+  end
+  // Keep the normal-direction peak comparison unchanged. Reject isolated
+@@ -164,6 +179,31 @@
+  wire [11:0] nc_tolerance={1'b0,nc}+effective_tolerance;
+  // Treat small peak differences on sharp plateaus deterministically.
+  wire peak=!nb && mag!=0 && mag_tolerance>={1'b0,na} && {1'b0,mag}>nc_tolerance;
++ wire held_peak,competing_history;
++ if(TEMPORAL_NMS) begin:stable_peak_logic
++  // Keep an already established peak through a small (3 gradient units)
++  // amplitude fluctuation or a <=2-unit normal-direction peak tie.
++  // Current bilateral support remains mandatory; a disappeared edge releases
++  // immediately. The user's high threshold still controls every new seed.
++  wire [10:0] falling=local_high>3 ? local_high-11'd3:11'd0;
++  wire [10:0] hold_limit=falling>local_low ? falling:local_low;
++  wire bilateral=|(weak_support & tangent_a) && |(weak_support & tangent_b);
++  assign held_peak=!nb && n22[NW-1] && mag!=0 && mag>=hold_limit && bilateral &&
++                   {1'b0,mag}+12'd2>={1'b0,na} && {1'b0,mag}+12'd2>={1'b0,nc};
++  function competing;
++   input [NW-1:0] p;
++   input [10:0] center_mag,limit;
++   input [1:0] center_direction;
++   input center_sign;
++   begin competing=p[NW-1] && p[18:8]!=0 && p[18:8]>=limit &&
++    {1'b0,p[18:8]}+12'd2>={1'b0,center_mag} && p[20:19]==center_direction && p[21]==center_sign;end
++  endfunction
++  assign competing_history=competing(normal_a,mag,hold_limit,n22[20:19],n22[21]) ||
++                           competing(normal_c,mag,hold_limit,n22[20:19],n22[21]);
++ end else begin:original_peak_logic
++  assign held_peak=0;assign competing_history=0;
++ end
++ wire selected_peak=held_peak || (peak && !competing_history);
+  wire [11:0] protect_threshold={local_high,1'b0};
+  wire coherent_guard;
+  if(COHERENT_PROTECT) begin:coherent_motion
+@@ -190,7 +230,7 @@
+    out_gray<=use_canny ? n22[7:0] : gray3;
+    out_protect<=PROTECT_ENABLE && use_canny && peak && strong_supported &&
+                 {1'b0,mag}>=protect_threshold && coherent_guard;
+-   out_class<=use_canny ? (!peak || mag<local_low || !weak_supported ? 2'd0 : mag>=local_high && strong_supported ? 2'd2 : 2'd1) :
++   out_class<=use_canny ? (!selected_peak || mag<local_low || !weak_supported ? 2'd0 : held_peak || (mag>=local_high && strong_supported) ? 2'd2 : 2'd1) :
+      (magnitude!=0 && magnitude>=sobel_threshold ? 2'd2 : 2'd0);
+   end
+  end
+--- baseline/src/canny/canny_peak_history.v
++++ stable/src/canny/canny_peak_history.v
+@@ -0,0 +1,60 @@
++`ifndef TI60_CANNY_PEAK_HISTORY_V
++`define TI60_CANNY_PEAK_HISTORY_V
++// One prior strong/held NMS seed bit per pixel, packed into synchronous RAM.
++// Reads precede feedback writes by the NMS window latency. RAM needs no reset:
++// a complete matching configuration is required before any old bit is used.
++module canny_peak_history #(parameter WIDTH=960,HEIGHT=720,DW=22)(
++ input clk,rst_n,invalidate,
++ input in_valid,in_sop,in_eop,input [DW-1:0] in_data,
++ input [12:0] configuration,
++ input feedback_valid,feedback_sop,feedback_eop,feedback_seed,
++ output out_valid,out_sop,out_eop,output [DW:0] out_data
++);
++ localparam N=WIDTH*HEIGHT,WORDS=(N+31)/32;
++ localparam IW=$clog2(N+1),AW=$clog2(WORDS+1);
++ reg [31:0] seeds[0:WORDS-1];
++ reg [IW-1:0] read_index,write_index;
++ wire [IW-1:0] ri=in_sop ? 0:read_index;
++ wire [IW-1:0] wi=feedback_sop ? 0:write_index;
++ reg [31:0] word_q,write_pack;
++ reg [4:0] bit_q;
++ reg [DW-1:0] data_q;
++ reg [2:0] control_q;
++ reg complete,frame_history,history_q;
++ reg [12:0] complete_configuration,write_configuration;
++ wire matching=complete && complete_configuration==configuration && !invalidate;
++ wire [31:0] packed_seed=(feedback_sop ? 32'd0:write_pack) |
++                                  (feedback_seed ? (32'd1<<wi[4:0]):32'd0);
++ // Separate synchronous read and write ports; infer packed block RAM.
++ always @(posedge clk) begin
++  if(in_valid) word_q<=seeds[ri>>5];
++  if(feedback_valid && (wi[4:0]==31 || feedback_eop))
++   seeds[wi>>5]<=packed_seed;
++ end
++ always @(posedge clk or negedge rst_n) begin
++  if(!rst_n) begin
++   read_index<=0;write_index<=0;write_pack<=0;data_q<=0;bit_q<=0;control_q<=0;
++   complete<=0;frame_history<=0;history_q<=0;complete_configuration<=0;write_configuration<=0;
++  end else begin
++   control_q<={in_sop,in_eop,in_valid};
++   if(invalidate) begin complete<=0;frame_history<=0;end
++   if(in_valid) begin
++    data_q<=in_data;bit_q<=ri[4:0];
++    history_q<=in_sop ? matching:frame_history;
++    if(in_sop) frame_history<=matching;
++    read_index<=in_eop ? 0:ri+1'b1;
++   end
++   if(feedback_valid) begin
++    if(feedback_sop) write_configuration<=configuration;
++    write_pack<=(wi[4:0]==31 || feedback_eop) ? 0:packed_seed;
++    write_index<=feedback_eop ? 0:wi+1'b1;
++    if(feedback_eop && !invalidate) begin
++     complete<=1;complete_configuration<=feedback_sop ? configuration:write_configuration;
++    end
++   end
++  end
++ end
++ assign out_valid=control_q[0];assign out_sop=control_q[2];assign out_eop=control_q[1];
++ assign out_data={history_q && word_q[bit_q],data_q};
++endmodule
++`endif
+--- baseline/src/canny/canny_rtl.vh
++++ stable/src/canny/canny_rtl.vh
+@@ -2,6 +2,7 @@
+ `include "src/canny/canny_window.v"
+ `include "src/canny/canny_median3.v"
+ `include "src/canny/canny_gaussian3.v"
++`include "src/canny/canny_peak_history.v"
+ `include "src/canny/canny_frontend.v"
+ `include "src/canny/canny_local_link.v"
+ `include "src/canny/canny_frame.v"
+--- baseline/Ti60_Demo.xml
++++ stable/Ti60_Demo.xml
+@@ -1,225 +1,224 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<efx:project name="Ti60_Demo" description="" sw_version="2026.1.132.4.5" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
++<efx:project xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Ti60_Demo" description="" sw_version="2026.1.132.4.5" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
+     <efx:device_info>
+-        <efx:family name="Titanium"/>
+-        <efx:device name="Ti60F225"/>
+-        <efx:timing_model name="C4"/>
++        <efx:family name="Titanium" />
++        <efx:device name="Ti60F225" />
++        <efx:timing_model name="C4" />
+     </efx:device_info>
+     <efx:design_info def_veri_version="verilog_2k" def_vhdl_version="vhdl_2008" unified_flow="false" partition_interface_allowed_off_perimeter="true">
+-        <efx:top_module name="example_top"/>
+-        <efx:design_file name="src/axi/R0_FIFO_32.sv" version="default" library="default"/>
+-        <efx:design_file name="example_top.v" version="default" library="default"/>
+-        <efx:design_file name="src/ddr_rw_ctrl.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_16bit.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/CMOS_Capture_RAW_Gray.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/I2C_MT9M001_Gray_Config.v" version="default" library="default"/>
+-        <efx:design_file name="src/lcd_para.v" version="default" library="default"/>
+-        <efx:design_file name="src/lcd_driver.v" version="default" library="default"/>
+-        <efx:design_file name="src/hdmi_ip/hdmi_tx_ip.v" version="default" library="default"/>
+-        <efx:design_file name="src/hdmi_ip/encode.v" version="default" library="default"/>
+-        <efx:design_file name="src/hdmi_ip/serdes_4b_10to1.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/I2C_SC130GS_12801024_4Lanes_Config.v" version="default" library="default"/>
+-        <efx:design_file name="src/PWMLite.v" version="default" library="default"/>
+-        <efx:design_file name="src/lcd_display.v" version="default" library="default"/>
+-        <efx:design_file name="src/dsi/dsi_init.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sensor_Image_XYCrop.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_reg16_dat16.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/I2C_AR0135_1280720_Config.v" version="default" library="default"/>
+-        <efx:design_file name="src/axi/AXI4_AWARMux.v" version="default" library="default"/>
+-        <efx:design_file name="src/lvds/LCDDual2LVDS.v" version="default" library="default"/>
+-        <efx:design_file name="src/hdmi_ip/tmds_channel.v" version="default" library="default"/>
+-        <efx:design_file name="src/hdmi_ip/rgb2dvi.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_reg16_dat8_wronly.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/I2C_SC1336_1280720_Config.v" version="default" library="default"/>
+-        <efx:design_file name="src/isp/VIP_Matrix_Generate_3X3_8Bit.v" version="default" library="default"/>
+-        <efx:design_file name="src/isp/VIP_RAW8_RGB888.v" version="default" library="default"/>
+-        <efx:design_file name="src/isp/FrameBoundCrop.v" version="default" library="default"/>
+-        <efx:design_file name="src/isp/Line_Shift_RAM_8Bit.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/Sobeledge_matrix_3x3.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/MedianFilter3x3.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/ast_readylatency_adapt.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/linebuffers.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/shift_regs.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/extract_region_c_shiftram_xtap.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/ast_readylatency_adapt_scfifo.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/Sobeledge.v" version="default" library="default"/>
+-        <efx:design_file name="src/Sobeledge_8d/hdl/Sobeledge_proc.v" version="default" library="default"/>
+-        <efx:design_file name="src/key_counter_scan.v" version="default" library="default"/>
+-        <efx:design_file name="src/threshold_osd.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_cmos/hdl/cmos2dcfifo.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_cmos/hdl/cmos_dcfifo_1.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_cmos/hdl/cmos_dcfifo.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_cmos/hdl/cmos_top.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_cmos/hdl/burst_read.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_cmos/hdl/cmos_fifo2st.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/multiplier_unsigned_16x16_pp.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_mult.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_raw_st.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_scfifo.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_proc.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_fifo2st.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_top.v" version="default" library="default"/>
+-        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_shift_regs.v" version="default" library="default"/>
+-        <efx:design_file name="src/axi/axi4_ctrl.v" version="default" library="default"/>
+-        <efx:design_file name="src/axi/split_frame_ctrl.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/ov5640_init.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/ov5640_sccb_master.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/ov5640_960x720_60_regs.v" version="default" library="default"/>
+-        <efx:design_file name="src/cmos_i2c/ov5640_dvp.v" version="default" library="default"/>
+-        <efx:top_vhdl_arch name=""/>
+-        <efx:msg_config name=""/>
+-        <efx:partition_definitions name=""/>
+-        <efx:partition_interface_assignments name=""/>
++        <efx:top_module name="example_top" />
++        <efx:design_file name="src/axi/R0_FIFO_32.sv" version="default" library="default" />
++        <efx:design_file name="example_top.v" version="default" library="default" />
++        <efx:design_file name="src/ddr_rw_ctrl.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_16bit.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/CMOS_Capture_RAW_Gray.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/I2C_MT9M001_Gray_Config.v" version="default" library="default" />
++        <efx:design_file name="src/lcd_para.v" version="default" library="default" />
++        <efx:design_file name="src/lcd_driver.v" version="default" library="default" />
++        <efx:design_file name="src/hdmi_ip/hdmi_tx_ip.v" version="default" library="default" />
++        <efx:design_file name="src/hdmi_ip/encode.v" version="default" library="default" />
++        <efx:design_file name="src/hdmi_ip/serdes_4b_10to1.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/I2C_SC130GS_12801024_4Lanes_Config.v" version="default" library="default" />
++        <efx:design_file name="src/PWMLite.v" version="default" library="default" />
++        <efx:design_file name="src/lcd_display.v" version="default" library="default" />
++        <efx:design_file name="src/dsi/dsi_init.v" version="default" library="default" />
++        <efx:design_file name="src/Sensor_Image_XYCrop.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_reg16_dat16.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/I2C_AR0135_1280720_Config.v" version="default" library="default" />
++        <efx:design_file name="src/axi/AXI4_AWARMux.v" version="default" library="default" />
++        <efx:design_file name="src/lvds/LCDDual2LVDS.v" version="default" library="default" />
++        <efx:design_file name="src/hdmi_ip/tmds_channel.v" version="default" library="default" />
++        <efx:design_file name="src/hdmi_ip/rgb2dvi.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_reg16_dat8_wronly.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/I2C_SC1336_1280720_Config.v" version="default" library="default" />
++        <efx:design_file name="src/isp/VIP_Matrix_Generate_3X3_8Bit.v" version="default" library="default" />
++        <efx:design_file name="src/isp/VIP_RAW8_RGB888.v" version="default" library="default" />
++        <efx:design_file name="src/isp/FrameBoundCrop.v" version="default" library="default" />
++        <efx:design_file name="src/isp/Line_Shift_RAM_8Bit.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/Sobeledge_matrix_3x3.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/MedianFilter3x3.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/ast_readylatency_adapt.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/linebuffers.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/shift_regs.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/extract_region_c_shiftram_xtap.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/ast_readylatency_adapt_scfifo.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/Sobeledge.v" version="default" library="default" />
++        <efx:design_file name="src/Sobeledge_8d/hdl/Sobeledge_proc.v" version="default" library="default" />
++        <efx:design_file name="src/key_counter_scan.v" version="default" library="default" />
++        <efx:design_file name="src/threshold_osd.v" version="default" library="default" />
++        <efx:design_file name="src/vip_cmos/hdl/cmos2dcfifo.v" version="default" library="default" />
++        <efx:design_file name="src/vip_cmos/hdl/cmos_dcfifo_1.v" version="default" library="default" />
++        <efx:design_file name="src/vip_cmos/hdl/cmos_dcfifo.v" version="default" library="default" />
++        <efx:design_file name="src/vip_cmos/hdl/cmos_top.v" version="default" library="default" />
++        <efx:design_file name="src/vip_cmos/hdl/burst_read.v" version="default" library="default" />
++        <efx:design_file name="src/vip_cmos/hdl/cmos_fifo2st.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/multiplier_unsigned_16x16_pp.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_mult.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_raw_st.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_scfifo.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_proc.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_fifo2st.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_top.v" version="default" library="default" />
++        <efx:design_file name="src/vip_rgb2gray/hdl/vip_rgb2gray_shift_regs.v" version="default" library="default" />
++        <efx:design_file name="src/axi/axi4_ctrl.v" version="default" library="default" />
++        <efx:design_file name="src/axi/split_frame_ctrl.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/ov5640_init.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/ov5640_sccb_master.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/ov5640_960x720_60_regs.v" version="default" library="default" />
++        <efx:design_file name="src/cmos_i2c/ov5640_dvp.v" version="default" library="default" />
++        <efx:top_vhdl_arch name="" />
++        <efx:msg_config name="" />
++        <efx:partition_definitions name="" />
++        <efx:partition_interface_assignments name="" />
+     </efx:design_info>
+     <efx:interface_info>
+-        <efx:default_peri_file name="Ti60_Demo.peri.xml"/>
+-        <efx:peri_file name="Ti60_Demo.peri.xml"/>
++        <efx:default_peri_file name="Ti60_Demo.peri.xml" />
++        <efx:peri_file name="Ti60_Demo.peri.xml" />
+     </efx:interface_info>
+     <efx:constraint_info>
+-        <efx:sdc_file name="Ti60_Demo.pt.sdc"/>
+-        <efx:inter_file name=""/>
++        <efx:sdc_file name="Ti60_Demo.pt.sdc" />
++        <efx:inter_file name="" />
+     </efx:constraint_info>
+-    <efx:sim_info/>
+-    <efx:misc_info/>
+-    <efx:ooc_info/>
++    <efx:sim_info />
++    <efx:misc_info />
++    <efx:ooc_info />
+     <efx:ip_info>
+         <efx:ip instance_name="W0_FIFO" path="ip/W0_FIFO/settings.json" ooc="false">
+-            <efx:ip_src_file name="W0_FIFO.sv"/>
++            <efx:ip_src_file name="W0_FIFO.sv" />
+         </efx:ip>
+         <efx:ip instance_name="R0_FIFO" path="ip/R0_FIFO/settings.json" ooc="false">
+-            <efx:ip_src_file name="R0_FIFO.sv"/>
++            <efx:ip_src_file name="R0_FIFO.sv" />
+         </efx:ip>
+         <efx:ip instance_name="dsi_tx" path="ip/dsi_tx/settings.json" ooc="false">
+-            <efx:ip_src_file name="dsi_tx.sv"/>
++            <efx:ip_src_file name="dsi_tx.sv" />
+         </efx:ip>
+         <efx:ip instance_name="csi_rx" path="ip/csi_rx/settings.json" ooc="false">
+-            <efx:ip_src_file name="csi_rx.sv"/>
++            <efx:ip_src_file name="csi_rx.sv" />
+         </efx:ip>
+         <efx:ip instance_name="DdrCtrl" path="ip/DdrCtrl/settings.json" ooc="false">
+-            <efx:ip_src_file name="DdrCtrl.sv"/>
++            <efx:ip_src_file name="DdrCtrl.sv" />
+         </efx:ip>
+         <efx:ip instance_name="W0_FIFO_8" path="ip/W0_FIFO_8/settings.json" ooc="false">
+-            <efx:ip_src_file name="W0_FIFO_8.sv"/>
++            <efx:ip_src_file name="W0_FIFO_8.sv" />
+         </efx:ip>
+         <efx:ip instance_name="W0_FIFO_64" path="ip/W0_FIFO_64/settings.json" ooc="false">
+-            <efx:ip_src_file name="W0_FIFO_64.sv"/>
++            <efx:ip_src_file name="W0_FIFO_64.sv" />
+         </efx:ip>
+         <efx:ip instance_name="FIFO_W48R24" path="ip/FIFO_W48R24/settings.json" ooc="false">
+-            <efx:ip_src_file name="FIFO_W48R24.sv"/>
++            <efx:ip_src_file name="FIFO_W48R24.sv" />
+         </efx:ip>
+         <efx:ip instance_name="R0_FIFO_8" path="ip/R0_FIFO_8/settings.json" ooc="false">
+-            <efx:ip_src_file name="R0_FIFO_8.sv"/>
++            <efx:ip_src_file name="R0_FIFO_8.sv" />
+         </efx:ip>
+         <efx:ip instance_name="R0_FIFO_16" path="ip/R0_FIFO_16/settings.json" ooc="false">
+-            <efx:ip_src_file name="R0_FIFO_16.sv"/>
++            <efx:ip_src_file name="R0_FIFO_16.sv" />
+         </efx:ip>
+         <efx:ip instance_name="W0_FIFO_32" path="ip/W0_FIFO_32/settings.json" ooc="false">
+-            <efx:ip_src_file name="W0_FIFO_32.sv"/>
++            <efx:ip_src_file name="W0_FIFO_32.sv" />
+         </efx:ip>
+         <efx:ip instance_name="efinix_fifo" path="ip/efinix_fifo/settings.json" ooc="false">
+-            <efx:ip_src_file name="efinix_fifo.sv"/>
++            <efx:ip_src_file name="efinix_fifo.sv" />
+         </efx:ip>
+         <efx:ip instance_name="cmos_scfifo" path="ip/cmos_scfifo/settings.json" ooc="false">
+-            <efx:ip_src_file name="cmos_scfifo.sv"/>
++            <efx:ip_src_file name="cmos_scfifo.sv" />
+         </efx:ip>
+     </efx:ip_info>
+     <efx:synthesis tool_name="efx_map">
+-        <efx:param name="work_dir" value="work_syn" value_type="e_string"/>
+-        <efx:param name="write_efx_verilog" value="on" value_type="e_bool"/>
+-        <efx:param name="mode" value="speed" value_type="e_option"/>
+-        <efx:param name="max_ram" value="-1" value_type="e_integer"/>
+-        <efx:param name="max_mult" value="-1" value_type="e_integer"/>
+-        <efx:param name="infer-clk-enable" value="3" value_type="e_option"/>
+-        <efx:param name="infer-sync-set-reset" value="1" value_type="e_option"/>
+-        <efx:param name="fanout-limit" value="0" value_type="e_integer"/>
+-        <efx:param name="seq_opt" value="0" value_type="e_option"/>
+-        <efx:param name="retiming" value="0" value_type="e_option"/>
+-        <efx:param name="dsp-mac-packing" value="1" value_type="e_option"/>
+-        <efx:param name="dsp-input-regs-packing" value="1" value_type="e_option"/>
+-        <efx:param name="dsp-output-regs-packing" value="1" value_type="e_option"/>
+-        <efx:param name="bram_output_regs_packing" value="1" value_type="e_option"/>
+-        <efx:param name="blast_const_operand_adders" value="1" value_type="e_option"/>
+-        <efx:param name="operator-sharing" value="0" value_type="e_option"/>
+-        <efx:param name="optimize-adder-tree" value="0" value_type="e_option"/>
+-        <efx:param name="pack-luts-to-comb4" value="0" value_type="e_option"/>
+-        <efx:param name="min-sr-fanout" value="0" value_type="e_integer"/>
+-        <efx:param name="min-ce-fanout" value="0" value_type="e_integer"/>
+-        <efx:param name="seq-opt-sync-only" value="0" value_type="e_option"/>
+-        <efx:param name="blackbox-error" value="1" value_type="e_option"/>
+-        <efx:param name="allow-const-ram-index" value="0" value_type="e_option"/>
+-        <efx:param name="hdl-compile-unit" value="1" value_type="e_option"/>
+-        <efx:param name="create-onehot-fsms" value="0" value_type="e_option"/>
+-        <efx:param name="mult-decomp-retime" value="0" value_type="e_option"/>
+-        <efx:param name="optimize-zero-init-rom" value="1" value_type="e_option"/>
+-        <efx:param name="insert-carry-skip" value="0" value_type="e_option"/>
+-        <efx:param name="mult-auto-pipeline" value="0" value_type="e_option"/>
+-        <efx:param name="use-logic-for-small-mem" value="64" value_type="e_integer"/>
+-        <efx:param name="use-logic-for-small-rom" value="64" value_type="e_integer"/>
+-        <efx:param name="bram-push-tco-outreg" value="0" value_type="e_option"/>
+-        <efx:param name="hdl-loop-limit" value="20000" value_type="e_integer"/>
+-        <efx:param name="enable-mark-debug" value="1" value_type="e_option"/>
+-        <efx:param name="max-bit-blast-mem-size" value="10240" value_type="e_integer"/>
+-        <efx:param name="peri-syn-instantiation" value="0" value_type="e_option"/>
+-        <efx:param name="peri-syn-inference" value="0" value_type="e_option"/>
+-        <efx:param name="ram-decomp-mode" value="0" value_type="e_option"/>
+-        <efx:param name="max_threads" value="-1" value_type="e_integer"/>
+-        <efx:param name="include" value="ip/W0_FIFO" value_type="e_string"/>
+-        <efx:param name="include" value="ip/R0_FIFO" value_type="e_string"/>
+-        <efx:param name="include" value="ip/dsi_tx" value_type="e_string"/>
+-        <efx:param name="include" value="ip/csi_rx" value_type="e_string"/>
+-        <efx:param name="include" value="ip/DdrCtrl" value_type="e_string"/>
+-        <efx:param name="include" value="ip/W0_FIFO_8" value_type="e_string"/>
+-        <efx:param name="include" value="ip/W0_FIFO_64" value_type="e_string"/>
+-        <efx:param name="include" value="ip/FIFO_W48R24" value_type="e_string"/>
+-        <efx:param name="include" value="ip/R0_FIFO_8" value_type="e_string"/>
+-        <efx:param name="include" value="ip/R0_FIFO_16" value_type="e_string"/>
+-        <efx:param name="include" value="ip/W0_FIFO_32" value_type="e_string"/>
+-        <efx:param name="include" value="ip/efinix_fifo" value_type="e_string"/>
+-        <efx:param name="include" value="ip/cmos_scfifo" value_type="e_string"/>
++        <efx:param name="work_dir" value="work_syn" value_type="e_string" />
++        <efx:param name="write_efx_verilog" value="on" value_type="e_bool" />
++        <efx:param name="mode" value="speed" value_type="e_option" />
++        <efx:param name="max_ram" value="-1" value_type="e_integer" />
++        <efx:param name="max_mult" value="-1" value_type="e_integer" />
++        <efx:param name="infer-clk-enable" value="3" value_type="e_option" />
++        <efx:param name="infer-sync-set-reset" value="1" value_type="e_option" />
++        <efx:param name="fanout-limit" value="0" value_type="e_integer" />
++        <efx:param name="seq_opt" value="0" value_type="e_option" />
++        <efx:param name="retiming" value="0" value_type="e_option" />
++        <efx:param name="dsp-mac-packing" value="1" value_type="e_option" />
++        <efx:param name="dsp-input-regs-packing" value="1" value_type="e_option" />
++        <efx:param name="dsp-output-regs-packing" value="1" value_type="e_option" />
++        <efx:param name="bram_output_regs_packing" value="1" value_type="e_option" />
++        <efx:param name="blast_const_operand_adders" value="1" value_type="e_option" />
++        <efx:param name="operator-sharing" value="0" value_type="e_option" />
++        <efx:param name="optimize-adder-tree" value="0" value_type="e_option" />
++        <efx:param name="pack-luts-to-comb4" value="0" value_type="e_option" />
++        <efx:param name="min-sr-fanout" value="0" value_type="e_integer" />
++        <efx:param name="min-ce-fanout" value="0" value_type="e_integer" />
++        <efx:param name="seq-opt-sync-only" value="0" value_type="e_option" />
++        <efx:param name="blackbox-error" value="1" value_type="e_option" />
++        <efx:param name="allow-const-ram-index" value="0" value_type="e_option" />
++        <efx:param name="hdl-compile-unit" value="1" value_type="e_option" />
++        <efx:param name="create-onehot-fsms" value="0" value_type="e_option" />
++        <efx:param name="mult-decomp-retime" value="0" value_type="e_option" />
++        <efx:param name="optimize-zero-init-rom" value="1" value_type="e_option" />
++        <efx:param name="insert-carry-skip" value="0" value_type="e_option" />
++        <efx:param name="mult-auto-pipeline" value="0" value_type="e_option" />
++        <efx:param name="use-logic-for-small-mem" value="64" value_type="e_integer" />
++        <efx:param name="use-logic-for-small-rom" value="64" value_type="e_integer" />
++        <efx:param name="bram-push-tco-outreg" value="0" value_type="e_option" />
++        <efx:param name="hdl-loop-limit" value="20000" value_type="e_integer" />
++        <efx:param name="enable-mark-debug" value="1" value_type="e_option" />
++        <efx:param name="max-bit-blast-mem-size" value="10240" value_type="e_integer" />
++        <efx:param name="peri-syn-instantiation" value="0" value_type="e_option" />
++        <efx:param name="peri-syn-inference" value="0" value_type="e_option" />
++        <efx:param name="ram-decomp-mode" value="0" value_type="e_option" />
++        <efx:param name="max_threads" value="-1" value_type="e_integer" />
++        <efx:param name="include" value="ip/W0_FIFO" value_type="e_string" />
++        <efx:param name="include" value="ip/R0_FIFO" value_type="e_string" />
++        <efx:param name="include" value="ip/dsi_tx" value_type="e_string" />
++        <efx:param name="include" value="ip/csi_rx" value_type="e_string" />
++        <efx:param name="include" value="ip/DdrCtrl" value_type="e_string" />
++        <efx:param name="include" value="ip/W0_FIFO_8" value_type="e_string" />
++        <efx:param name="include" value="ip/W0_FIFO_64" value_type="e_string" />
++        <efx:param name="include" value="ip/FIFO_W48R24" value_type="e_string" />
++        <efx:param name="include" value="ip/R0_FIFO_8" value_type="e_string" />
++        <efx:param name="include" value="ip/R0_FIFO_16" value_type="e_string" />
++        <efx:param name="include" value="ip/W0_FIFO_32" value_type="e_string" />
++        <efx:param name="include" value="ip/efinix_fifo" value_type="e_string" />
++        <efx:param name="include" value="ip/cmos_scfifo" value_type="e_string" />
+     </efx:synthesis>
+     <efx:place_and_route tool_name="efx_pnr">
+-        <efx:param name="work_dir" value="work_pnr" value_type="e_string"/>
+-        <efx:param name="verbose" value="off" value_type="e_bool"/>
+-        <efx:param name="optimization_level" value="TIMING_1" value_type="e_option"/>
+-        <efx:param name="seed" value="1" value_type="e_integer"/>
+-        <efx:param name="placer_effort_level" value="1" value_type="e_option"/>
+-        <efx:param name="max_threads" value="32" value_type="e_integer"/>
+-        <efx:param name="beneficial_skew" value="on" value_type="e_option"/>
+-        <efx:param name="print_critical_path" value="10" value_type="e_integer"/>
+-        <efx:param name="classic_flow" value="off" value_type="e_noarg"/>
++        <efx:param name="work_dir" value="work_pnr" value_type="e_string" />
++        <efx:param name="verbose" value="off" value_type="e_bool" />
++        <efx:param name="optimization_level" value="TIMING_1" value_type="e_option" />
++        <efx:param name="seed" value="1" value_type="e_integer" />
++        <efx:param name="placer_effort_level" value="1" value_type="e_option" />
++        <efx:param name="max_threads" value="32" value_type="e_integer" />
++        <efx:param name="beneficial_skew" value="on" value_type="e_option" />
++        <efx:param name="print_critical_path" value="10" value_type="e_integer" />
++        <efx:param name="classic_flow" value="off" value_type="e_noarg" />
+     </efx:place_and_route>
+     <efx:bitstream_generation tool_name="efx_pgm">
+-        <efx:param name="mode" value="active" value_type="e_option"/>
+-        <efx:param name="width" value="4" value_type="e_option"/>
+-        <efx:param name="cold_boot" value="off" value_type="e_bool"/>
+-        <efx:param name="cascade" value="off" value_type="e_option"/>
+-        <efx:param name="enable_roms" value="on" value_type="e_option"/>
+-        <efx:param name="spi_low_power_mode" value="off" value_type="e_bool"/>
+-        <efx:param name="io_weak_pullup" value="on" value_type="e_bool"/>
+-        <efx:param name="oscillator_clock_divider" value="DIV2" value_type="e_option"/>
+-        <efx:param name="enable_crc_check" value="on" value_type="e_bool"/>
+-        <efx:param name="bitstream_compression" value="on" value_type="e_bool"/>
+-        <efx:param name="active_capture_clk_edge" value="negedge" value_type="e_option"/>
+-        <efx:param name="release_tri_then_reset" value="on" value_type="e_bool"/>
+-        <efx:param name="enable_external_master_clock" value="off" value_type="e_bool"/>
+-        <efx:param name="jtag_usercode" value="0xFFFFFFFF" value_type="e_string"/>
+-        <efx:param name="generate_bit" value="on" value_type="e_bool"/>
+-        <efx:param name="generate_bitbin" value="on" value_type="e_bool"/>
+-        <efx:param name="generate_hex" value="on" value_type="e_bool"/>
+-        <efx:param name="generate_hexbin" value="on" value_type="e_bool"/>
+-        <efx:param name="four_byte_addressing" value="off" value_type="e_bool"/>
++        <efx:param name="mode" value="active" value_type="e_option" />
++        <efx:param name="width" value="4" value_type="e_option" />
++        <efx:param name="cold_boot" value="off" value_type="e_bool" />
++        <efx:param name="cascade" value="off" value_type="e_option" />
++        <efx:param name="enable_roms" value="on" value_type="e_option" />
++        <efx:param name="spi_low_power_mode" value="off" value_type="e_bool" />
++        <efx:param name="io_weak_pullup" value="on" value_type="e_bool" />
++        <efx:param name="oscillator_clock_divider" value="DIV2" value_type="e_option" />
++        <efx:param name="enable_crc_check" value="on" value_type="e_bool" />
++        <efx:param name="bitstream_compression" value="on" value_type="e_bool" />
++        <efx:param name="active_capture_clk_edge" value="negedge" value_type="e_option" />
++        <efx:param name="release_tri_then_reset" value="on" value_type="e_bool" />
++        <efx:param name="enable_external_master_clock" value="off" value_type="e_bool" />
++        <efx:param name="jtag_usercode" value="0xFFFFFFFF" value_type="e_string" />
++        <efx:param name="generate_bit" value="on" value_type="e_bool" />
++        <efx:param name="generate_bitbin" value="on" value_type="e_bool" />
++        <efx:param name="generate_hex" value="on" value_type="e_bool" />
++        <efx:param name="generate_hexbin" value="on" value_type="e_bool" />
++        <efx:param name="four_byte_addressing" value="off" value_type="e_bool" />
+     </efx:bitstream_generation>
+     <efx:debugger>
+-        <efx:param name="work_dir" value="work_dbg" value_type="e_string"/>
+-        <efx:param name="auto_instantiation" value="off" value_type="e_bool"/>
+-        <efx:param name="profile" value="NONE" value_type="e_string"/>
++        <efx:param name="work_dir" value="work_dbg" value_type="e_string" />
++        <efx:param name="auto_instantiation" value="off" value_type="e_bool" />
++        <efx:param name="profile" value="NONE" value_type="e_string" />
+     </efx:debugger>
+     <efx:security>
+-        <efx:param name="enable_bitstream_encrypt" value="off" value_type="e_bool"/>
+-        <efx:param name="enable_bitstream_auth" value="off" value_type="e_bool"/>
+-        <efx:param name="encryption_key_file" value="NONE" value_type="e_string"/>
+-        <efx:param name="auth_key_file" value="NONE" value_type="e_string"/>
+-        <efx:param name="randomize_iv_value" value="off" value_type="e_bool"/>
+-        <efx:param name="iv_value" value="" value_type="e_string"/>
++        <efx:param name="enable_bitstream_encrypt" value="off" value_type="e_bool" />
++        <efx:param name="enable_bitstream_auth" value="off" value_type="e_bool" />
++        <efx:param name="encryption_key_file" value="NONE" value_type="e_string" />
++        <efx:param name="auth_key_file" value="NONE" value_type="e_string" />
++        <efx:param name="randomize_iv_value" value="off" value_type="e_bool" />
++        <efx:param name="iv_value" value="" value_type="e_string" />
+     </efx:security>
+-</efx:project>
++</efx:project>

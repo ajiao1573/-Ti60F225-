@@ -1,0 +1,164 @@
+[
+  {
+    "index": 1,
+    "file": "636c96a3c2756057e895062826f00441.jpg",
+    "input_sha256": "6e6d16f565b105388cbcca29f6fcd01e8975ab46f3f199f22496ce8549d8498b",
+    "source_size": [
+      1920,
+      1440
+    ],
+    "crop": [
+      240,
+      0,
+      1680,
+      1440
+    ],
+    "expected": "OK",
+    "reference": "OK",
+    "acc": -1155679,
+    "reason": "ok",
+    "raw_points": 335,
+    "gap": 6,
+    "filter_enabled": false,
+    "removed": 0,
+    "scan_rtl_pass": true,
+    "filter_core_rtl_pass": true,
+    "core_report": "core done after 1630166 cycles valid=1 reason=0",
+    "requested_result_pass": true
+  },
+  {
+    "index": 2,
+    "file": "ce9e0fec8a3d2c6f56737a39b3c89336.jpg",
+    "input_sha256": "63ed37a4a642365fa3df8c1e442ba59c23c177ae69c6b13b4c554328be595e69",
+    "source_size": [
+      1920,
+      1440
+    ],
+    "crop": [
+      240,
+      0,
+      1680,
+      1440
+    ],
+    "expected": "OK",
+    "reference": "OK",
+    "acc": -9559785,
+    "reason": "ok",
+    "raw_points": 327,
+    "gap": 6,
+    "filter_enabled": false,
+    "removed": 0,
+    "scan_rtl_pass": true,
+    "filter_core_rtl_pass": true,
+    "core_report": "core done after 1593399 cycles valid=1 reason=0",
+    "requested_result_pass": true
+  },
+  {
+    "index": 3,
+    "file": "7a6581bbd387b9fdb5b07b4a04b5a9c0.jpg",
+    "input_sha256": "df3109accf82c9c72f9d48cdc954c1406b2b6581cebe7c88af1a880a2e86f0ea",
+    "source_size": [
+      1920,
+      1440
+    ],
+    "crop": [
+      240,
+      0,
+      1680,
+      1440
+    ],
+    "expected": "OK",
+    "reference": "OK",
+    "acc": -4633501,
+    "reason": "ok",
+    "raw_points": 352,
+    "gap": 6,
+    "filter_enabled": false,
+    "removed": 0,
+    "scan_rtl_pass": true,
+    "filter_core_rtl_pass": true,
+    "core_report": "core done after 1713498 cycles valid=1 reason=0",
+    "requested_result_pass": true
+  },
+  {
+    "index": 4,
+    "file": "090c4b1ed1af0d3cab6a9d0bbbdb5547.jpg",
+    "input_sha256": "a6bdf65ddffd90af7369a4cfa6464a6f95ac859863d674211776a9934a2bab59",
+    "source_size": [
+      1920,
+      1440
+    ],
+    "crop": [
+      240,
+      0,
+      1680,
+      1440
+    ],
+    "expected": "NG",
+    "reference": "NG",
+    "acc": 10858733,
+    "reason": "ok",
+    "raw_points": 379,
+    "gap": 6,
+    "filter_enabled": false,
+    "removed": 0,
+    "scan_rtl_pass": true,
+    "filter_core_rtl_pass": true,
+    "core_report": "core done after 1747414 cycles valid=1 reason=0",
+    "requested_result_pass": true
+  },
+  {
+    "index": 5,
+    "file": "c5449943964080530966ec29ec0eaf5c.jpg",
+    "input_sha256": "b77da867211bdf79452de872d296e172e8432a0163e42ba6175d0dce56a853f6",
+    "source_size": [
+      1920,
+      1440
+    ],
+    "crop": [
+      240,
+      0,
+      1680,
+      1440
+    ],
+    "expected": "NG",
+    "reference": "NG",
+    "acc": 17086369,
+    "reason": "ok",
+    "raw_points": 340,
+    "gap": 6,
+    "filter_enabled": false,
+    "removed": 0,
+    "scan_rtl_pass": true,
+    "filter_core_rtl_pass": true,
+    "core_report": "core done after 1554658 cycles valid=1 reason=0",
+    "requested_result_pass": true
+  },
+  {
+    "index": 6,
+    "file": "c28beab09389f00fa77e36bd2913f3db.jpg",
+    "input_sha256": "eb36ccb9b4722e6d81108d6b506d692a132a48e26c8ec20515986851d9bd7e27",
+    "source_size": [
+      1920,
+      1440
+    ],
+    "crop": [
+      240,
+      0,
+      1680,
+      1440
+    ],
+    "expected": "NG",
+    "reference": "NG",
+    "acc": 15033957,
+    "reason": "ok",
+    "raw_points": 276,
+    "gap": 6,
+    "filter_enabled": false,
+    "removed": 0,
+    "scan_rtl_pass": true,
+    "filter_core_rtl_pass": true,
+    "core_report": "core done after 1269760 cycles valid=1 reason=0",
+    "requested_result_pass": true
+  }
+]

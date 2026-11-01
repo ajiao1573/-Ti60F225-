@@ -1,0 +1,23 @@
+Sat October 31 26 10:52:05 - Board Profile Selected: Generic Board Profile Using FT232H
+Sat October 31 26 10:52:07 - Valid device ID found: 0x10660A79
+Sat October 31 26 10:52:07 - JTAG chain target changed to device 1: 0x10660A79
+Sat October 31 26 10:53:03 - Programming Device 1
+Sat October 31 26 10:53:04 - Valid device ID found: 0x10660A79
+Sat October 31 26 10:53:04 - Using FTDI URL (SPI = ftdi://0x0403:0x6014:0:ff/1, JTAG = ftdi://0x0403:0x6014:0:ff/1)
+Sat October 31 26 10:53:04 - jtag programming started!
+Sat October 31 26 10:53:04 - JTAG Chain Programming on ftdi://0x0403:0x6014:0:ff/1, target: 1
+Sat October 31 26 10:53:05 - Programming 'C:\Users\aj150\Desktop\FPGA\B_web_autoplate\output\lens_calibration\Ti60_Demo.bit' via JTAG at freq 6.0 MHz
+Sat October 31 26 10:53:06 - Device ID read from JTAG: 0x10660A79
+Sat October 31 26 10:53:09 - ... finished with JTAG programming
+Sat October 31 26 10:53:10 - Device is in user mode!
+Sat October 31 26 10:53:10 - Programming operation completed.
+Sat October 31 26 11:39:08 - Programming Device 1
+Sat October 31 26 11:39:09 - Valid device ID found: 0x10660A79
+Sat October 31 26 11:39:09 - Using FTDI URL (SPI = ftdi://0x0403:0x6014:0:ff/1, JTAG = ftdi://0x0403:0x6014:0:ff/1)
+Sat October 31 26 11:39:09 - jtag programming started!
+Sat October 31 26 11:39:09 - JTAG Chain Programming on ftdi://0x0403:0x6014:0:ff/1, target: 1
+Sat October 31 26 11:39:09 - Programming 'C:\Users\aj150\Desktop\FPGA\B_web_autoplate\output\lens_corrected\Ti60_Demo.bit' via JTAG at freq 6.0 MHz
+Sat October 31 26 11:39:10 - Device ID read from JTAG: 0x10660A79
+Sat October 31 26 11:39:13 - ... finished with JTAG programming
+Sat October 31 26 11:39:14 - Device is in user mode!
+Sat October 31 26 11:39:14 - Programming operation completed.

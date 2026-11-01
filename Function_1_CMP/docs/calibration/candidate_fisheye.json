@@ -1,0 +1,49 @@
+{
+  "model": "fisheye",
+  "image_size": [
+    1920,
+    1080
+  ],
+  "camera_matrix": [
+    [
+      2291.2078593011543,
+      0.0,
+      940.4640067384388
+    ],
+    [
+      0,
+      2291.4674947940784,
+      575.797283272844
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "distortion_coefficients": [
+    -0.0742824808205052,
+    0.06292996288113249,
+    -2.2701616208218534,
+    13.287970050394545
+  ],
+  "calibration_size": [
+    320,
+    180
+  ],
+  "reprojection_rms_pixels": 0.07025263154834091,
+  "native_reprojection_rms_pixels": 0.42151578929004546,
+  "views": [
+    "docs\\calibration\\frames\\pose02.png",
+    "docs\\calibration\\frames\\pose03.png",
+    "docs\\calibration\\frames\\pose04.png",
+    "docs\\calibration\\frames\\pose05.png",
+    "docs\\calibration\\frames\\pose06.png",
+    "docs\\calibration\\frames\\pose07.png",
+    "docs\\calibration\\frames\\pose08.png",
+    "docs\\calibration\\frames\\pose09.png",
+    "docs\\calibration\\frames\\pose10.png",
+    "docs\\calibration\\frames\\preflight.png"
+  ],
+  "status": "candidate_requires_review_before_hardware_enable"
+}

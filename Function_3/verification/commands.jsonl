@@ -1,0 +1,189 @@
+{"tag": "fit_bound31_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.35}
+{"tag": "fit_bound31_worn", "stage": "ivl", "exit": 0, "seconds": 0.73}
+{"tag": "fit_bound31_worn", "stage": "vvp", "exit": 0, "seconds": 6.96, "plusargs": ["+N=318", "+PTS=verification/user_worn_1/photo.pts.hex", "+EXP=verification/fit_bounds/bound31.exp.hex"], "log": "logs/fit_bound31_worn_run.log"}
+{"tag": "core_NG_cast_def_0_1261_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.11}
+{"tag": "core_NG_cast_def_0_1261_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.27}
+{"tag": "core_NG_cast_def_0_1261_jpeg", "stage": "vvp", "exit": 0, "seconds": 10.42, "plusargs": ["+PTS=verification/core/NG_cast_def_0_1261.jpeg.pts.hex", "+EXP=verification/core/NG_cast_def_0_1261.jpeg.exp.hex", "+N=389"], "log": "logs/core_NG_cast_def_0_1261_jpeg_run.log"}
+{"tag": "core_NG_cast_def_0_1261_jpeg_sub", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_NG_cast_def_0_1261_jpeg_sub", "stage": "ivl", "exit": 0, "seconds": 0.27}
+{"tag": "core_NG_cast_def_0_1261_jpeg_sub", "stage": "vvp", "exit": 0, "seconds": 3.34, "plusargs": ["+PTS=verification/core/NG_cast_def_0_1261.jpeg.sub.pts.hex", "+EXP=verification/core/NG_cast_def_0_1261.jpeg.sub.exp.hex", "+N=98"], "log": "logs/core_NG_cast_def_0_1261_jpeg_sub_run.log"}
+{"tag": "core_NG_cast_def_0_1446_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.12}
+{"tag": "core_NG_cast_def_0_1446_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.27}
+{"tag": "core_NG_cast_def_0_1446_jpeg", "stage": "vvp", "exit": 0, "seconds": 12.06, "plusargs": ["+PTS=verification/core/NG_cast_def_0_1446.jpeg.pts.hex", "+EXP=verification/core/NG_cast_def_0_1446.jpeg.exp.hex", "+N=400"], "log": "logs/core_NG_cast_def_0_1446_jpeg_run.log"}
+{"tag": "core_NG_cast_def_0_1446_jpeg_sub", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_NG_cast_def_0_1446_jpeg_sub", "stage": "ivl", "exit": 0, "seconds": 0.24}
+{"tag": "core_NG_cast_def_0_1446_jpeg_sub", "stage": "vvp", "exit": 0, "seconds": 3.54, "plusargs": ["+PTS=verification/core/NG_cast_def_0_1446.jpeg.sub.pts.hex", "+EXP=verification/core/NG_cast_def_0_1446.jpeg.sub.exp.hex", "+N=100"], "log": "logs/core_NG_cast_def_0_1446_jpeg_sub_run.log"}
+{"tag": "core_NG_cast_def_0_5244_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_NG_cast_def_0_5244_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "core_NG_cast_def_0_5244_jpeg", "stage": "vvp", "exit": 0, "seconds": 13.71, "plusargs": ["+PTS=verification/core/NG_cast_def_0_5244.jpeg.pts.hex", "+EXP=verification/core/NG_cast_def_0_5244.jpeg.exp.hex", "+N=366"], "log": "logs/core_NG_cast_def_0_5244_jpeg_run.log"}
+{"tag": "core_NG_cast_def_0_5244_jpeg_sub", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "core_NG_cast_def_0_5244_jpeg_sub", "stage": "ivl", "exit": 0, "seconds": 0.29}
+{"tag": "core_NG_cast_def_0_5244_jpeg_sub", "stage": "vvp", "exit": 0, "seconds": 3.35, "plusargs": ["+PTS=verification/core/NG_cast_def_0_5244.jpeg.sub.pts.hex", "+EXP=verification/core/NG_cast_def_0_5244.jpeg.sub.exp.hex", "+N=92"], "log": "logs/core_NG_cast_def_0_5244_jpeg_sub_run.log"}
+{"tag": "core_OK_cast_ok_0_1074_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "core_OK_cast_ok_0_1074_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "core_OK_cast_ok_0_1074_jpeg", "stage": "vvp", "exit": 0, "seconds": 13.32, "plusargs": ["+PTS=verification/core/OK_cast_ok_0_1074.jpeg.pts.hex", "+EXP=verification/core/OK_cast_ok_0_1074.jpeg.exp.hex", "+N=406"], "log": "logs/core_OK_cast_ok_0_1074_jpeg_run.log"}
+{"tag": "core_OK_cast_ok_0_1074_jpeg_sub", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "core_OK_cast_ok_0_1074_jpeg_sub", "stage": "ivl", "exit": 0, "seconds": 0.22}
+{"tag": "core_OK_cast_ok_0_1074_jpeg_sub", "stage": "vvp", "exit": 0, "seconds": 3.86, "plusargs": ["+PTS=verification/core/OK_cast_ok_0_1074.jpeg.sub.pts.hex", "+EXP=verification/core/OK_cast_ok_0_1074.jpeg.sub.exp.hex", "+N=102"], "log": "logs/core_OK_cast_ok_0_1074_jpeg_sub_run.log"}
+{"tag": "core_OK_cast_ok_0_129_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_OK_cast_ok_0_129_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.35}
+{"tag": "core_OK_cast_ok_0_129_jpeg", "stage": "vvp", "exit": 0, "seconds": 11.08, "plusargs": ["+PTS=verification/core/OK_cast_ok_0_129.jpeg.pts.hex", "+EXP=verification/core/OK_cast_ok_0_129.jpeg.exp.hex", "+N=360"], "log": "logs/core_OK_cast_ok_0_129_jpeg_run.log"}
+{"tag": "core_OK_cast_ok_0_129_jpeg_sub", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_OK_cast_ok_0_129_jpeg_sub", "stage": "ivl", "exit": 0, "seconds": 0.23}
+{"tag": "core_OK_cast_ok_0_129_jpeg_sub", "stage": "vvp", "exit": 0, "seconds": 3.55, "plusargs": ["+PTS=verification/core/OK_cast_ok_0_129.jpeg.sub.pts.hex", "+EXP=verification/core/OK_cast_ok_0_129.jpeg.sub.exp.hex", "+N=90"], "log": "logs/core_OK_cast_ok_0_129_jpeg_sub_run.log"}
+{"tag": "core_OK_cast_ok_0_1853_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_OK_cast_ok_0_1853_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.38}
+{"tag": "core_OK_cast_ok_0_1853_jpeg", "stage": "vvp", "exit": 0, "seconds": 13.53, "plusargs": ["+PTS=verification/core/OK_cast_ok_0_1853.jpeg.pts.hex", "+EXP=verification/core/OK_cast_ok_0_1853.jpeg.exp.hex", "+N=420"], "log": "logs/core_OK_cast_ok_0_1853_jpeg_run.log"}
+{"tag": "core_OK_cast_ok_0_1853_jpeg_sub", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "core_OK_cast_ok_0_1853_jpeg_sub", "stage": "ivl", "exit": 0, "seconds": 0.24}
+{"tag": "core_OK_cast_ok_0_1853_jpeg_sub", "stage": "vvp", "exit": 0, "seconds": 3.96, "plusargs": ["+PTS=verification/core/OK_cast_ok_0_1853.jpeg.sub.pts.hex", "+EXP=verification/core/OK_cast_ok_0_1853.jpeg.sub.exp.hex", "+N=105"], "log": "logs/core_OK_cast_ok_0_1853_jpeg_sub_run.log"}
+{"tag": "gap_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.94}
+{"tag": "gap_worn", "stage": "ivl", "exit": 0, "seconds": 0.61}
+{"tag": "gap_worn", "stage": "vvp", "exit": 0, "seconds": 0.53, "plusargs": ["+SRC=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.pts.hex", "+N=318", "+NOUT=245"], "log": "logs/gap_worn_run.log"}
+{"tag": "gap_worn_v2", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_worn_v2", "stage": "ivl", "exit": 0, "seconds": 0.5}
+{"tag": "gap_worn_v2", "stage": "vvp", "exit": 0, "seconds": 0.32, "plusargs": ["+SRC=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.pts.hex", "+N=318", "+NOUT=245"], "log": "logs/gap_worn_v2_run.log"}
+{"tag": "gap_reg_NG_cast_def_0_1261_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_NG_cast_def_0_1261_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "gap_reg_NG_cast_def_0_1261_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.33, "plusargs": ["+SRC=verification/core/NG_cast_def_0_1261.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1261.jpeg.pts.hex", "+N=389", "+NOUT=389"], "log": "logs/gap_reg_NG_cast_def_0_1261_jpeg_run.log"}
+{"tag": "gap_reg_NG_cast_def_0_1446_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_NG_cast_def_0_1446_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.24}
+{"tag": "gap_reg_NG_cast_def_0_1446_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.36, "plusargs": ["+SRC=verification/core/NG_cast_def_0_1446.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1446.jpeg.pts.hex", "+N=400", "+NOUT=400"], "log": "logs/gap_reg_NG_cast_def_0_1446_jpeg_run.log"}
+{"tag": "gap_reg_NG_cast_def_0_5244_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_NG_cast_def_0_5244_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.24}
+{"tag": "gap_reg_NG_cast_def_0_5244_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.25, "plusargs": ["+SRC=verification/core/NG_cast_def_0_5244.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_5244.jpeg.pts.hex", "+N=366", "+NOUT=366"], "log": "logs/gap_reg_NG_cast_def_0_5244_jpeg_run.log"}
+{"tag": "gap_reg_OK_cast_ok_0_1074_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_OK_cast_ok_0_1074_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.29}
+{"tag": "gap_reg_OK_cast_ok_0_1074_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.42, "plusargs": ["+SRC=verification/core/OK_cast_ok_0_1074.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1074.jpeg.pts.hex", "+N=406", "+NOUT=406"], "log": "logs/gap_reg_OK_cast_ok_0_1074_jpeg_run.log"}
+{"tag": "gap_reg_OK_cast_ok_0_129_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_OK_cast_ok_0_129_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.65}
+{"tag": "gap_reg_OK_cast_ok_0_129_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.53, "plusargs": ["+SRC=verification/core/OK_cast_ok_0_129.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_129.jpeg.pts.hex", "+N=360", "+NOUT=360"], "log": "logs/gap_reg_OK_cast_ok_0_129_jpeg_run.log"}
+{"tag": "gap_reg_OK_cast_ok_0_1853_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_OK_cast_ok_0_1853_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.21}
+{"tag": "gap_reg_OK_cast_ok_0_1853_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.24, "plusargs": ["+SRC=verification/core/OK_cast_ok_0_1853.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1853.jpeg.pts.hex", "+N=420", "+NOUT=420"], "log": "logs/gap_reg_OK_cast_ok_0_1853_jpeg_run.log"}
+{"tag": "gap_reg_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_reg_worn", "stage": "ivl", "exit": 0, "seconds": 0.23}
+{"tag": "gap_reg_worn", "stage": "vvp", "exit": 0, "seconds": 0.22, "plusargs": ["+SRC=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.pts.hex", "+N=318", "+NOUT=245"], "log": "logs/gap_reg_worn_run.log"}
+{"tag": "gap_worn_core", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "gap_worn_core", "stage": "ivl", "exit": 0, "seconds": 0.7}
+{"tag": "gap_worn_core", "stage": "vvp", "exit": 0, "seconds": 8.04, "plusargs": ["+N=245", "+PTS=verification/gap_probe/worn.pts.hex", "+EXP=verification/gap_probe/worn.exp.hex"], "log": "logs/gap_worn_core_run.log"}
+{"tag": "gap_real_chain", "stage": "ivlpp", "exit": 0, "seconds": 0.11}
+{"tag": "gap_real_chain", "stage": "ivl", "exit": 0, "seconds": 0.3}
+{"tag": "gap_real_chain", "stage": "vvp", "exit": 0, "seconds": 8.75, "plusargs": ["+RAWN=318", "+N=245", "+PTS=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.exp.hex"], "log": "logs/gap_real_chain_run.log"}
+{"tag": "gap_chain_NG_cast_def_0_1261_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "gap_chain_NG_cast_def_0_1261_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.43}
+{"tag": "gap_chain_NG_cast_def_0_1261_jpeg", "stage": "vvp", "exit": 0, "seconds": 10.92, "plusargs": ["+RAWN=389", "+N=389", "+PTS=verification/core/NG_cast_def_0_1261.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1261.jpeg.exp.hex"], "log": "logs/gap_chain_NG_cast_def_0_1261_jpeg_run.log"}
+{"tag": "gap_chain_NG_cast_def_0_1446_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "gap_chain_NG_cast_def_0_1446_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.33}
+{"tag": "gap_chain_NG_cast_def_0_1446_jpeg", "stage": "vvp", "exit": 0, "seconds": 12.37, "plusargs": ["+RAWN=400", "+N=400", "+PTS=verification/core/NG_cast_def_0_1446.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1446.jpeg.exp.hex"], "log": "logs/gap_chain_NG_cast_def_0_1446_jpeg_run.log"}
+{"tag": "gap_chain_NG_cast_def_0_5244_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "gap_chain_NG_cast_def_0_5244_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "gap_chain_NG_cast_def_0_5244_jpeg", "stage": "vvp", "exit": 0, "seconds": 11.39, "plusargs": ["+RAWN=366", "+N=366", "+PTS=verification/core/NG_cast_def_0_5244.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_5244.jpeg.exp.hex"], "log": "logs/gap_chain_NG_cast_def_0_5244_jpeg_run.log"}
+{"tag": "gap_chain_OK_cast_ok_0_1074_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "gap_chain_OK_cast_ok_0_1074_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.27}
+{"tag": "gap_chain_OK_cast_ok_0_1074_jpeg", "stage": "vvp", "exit": 0, "seconds": 13.68, "plusargs": ["+RAWN=406", "+N=406", "+PTS=verification/core/OK_cast_ok_0_1074.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1074.jpeg.exp.hex"], "log": "logs/gap_chain_OK_cast_ok_0_1074_jpeg_run.log"}
+{"tag": "gap_chain_OK_cast_ok_0_129_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.15}
+{"tag": "gap_chain_OK_cast_ok_0_129_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.3}
+{"tag": "gap_chain_OK_cast_ok_0_129_jpeg", "stage": "vvp", "exit": 0, "seconds": 12.03, "plusargs": ["+RAWN=360", "+N=360", "+PTS=verification/core/OK_cast_ok_0_129.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_129.jpeg.exp.hex"], "log": "logs/gap_chain_OK_cast_ok_0_129_jpeg_run.log"}
+{"tag": "gap_chain_OK_cast_ok_0_1853_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "gap_chain_OK_cast_ok_0_1853_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.29}
+{"tag": "gap_chain_OK_cast_ok_0_1853_jpeg", "stage": "vvp", "exit": 0, "seconds": 14.06, "plusargs": ["+RAWN=420", "+N=420", "+PTS=verification/core/OK_cast_ok_0_1853.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1853.jpeg.exp.hex"], "log": "logs/gap_chain_OK_cast_ok_0_1853_jpeg_run.log"}
+{"tag": "gap_chain_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "gap_chain_worn", "stage": "ivl", "exit": 0, "seconds": 0.22}
+{"tag": "gap_chain_worn", "stage": "vvp", "exit": 0, "seconds": 8.59, "plusargs": ["+RAWN=318", "+N=245", "+PTS=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.exp.hex"], "log": "logs/gap_chain_worn_run.log"}
+{"tag": "gap_boundary_reuse", "stage": "ivlpp", "exit": 0, "seconds": 0.41}
+{"tag": "gap_boundary_reuse", "stage": "ivl", "exit": 0, "seconds": 0.74}
+{"tag": "gap_boundary_reuse", "stage": "vvp", "exit": 0, "seconds": 0.7, "plusargs": [], "log": "logs/gap_boundary_reuse_run.log"}
+{"tag": "ram_gap_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.17}
+{"tag": "ram_gap_worn", "stage": "ivl", "exit": 0, "seconds": 0.84}
+{"tag": "ram_gap_worn", "stage": "vvp", "exit": 0, "seconds": 1.47, "plusargs": ["+SRC=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.pts.hex", "+N=318", "+NOUT=245"], "log": "logs/ram_gap_worn_run.log"}
+{"tag": "ram_gap_boundaries", "stage": "ivlpp", "exit": 0, "seconds": 0.16}
+{"tag": "ram_gap_boundaries", "stage": "ivl", "exit": 0, "seconds": 0.78}
+{"tag": "ram_gap_boundaries", "stage": "vvp", "exit": 0, "seconds": 1.8, "plusargs": [], "log": "logs/ram_gap_boundaries_run.log"}
+{"tag": "ram_gap_reg_NG_cast_def_0_1261_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.33}
+{"tag": "ram_gap_reg_NG_cast_def_0_1261_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.73}
+{"tag": "ram_gap_reg_NG_cast_def_0_1261_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.93, "plusargs": ["+SRC=verification/core/NG_cast_def_0_1261.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1261.jpeg.pts.hex", "+N=389", "+NOUT=389"], "log": "logs/ram_gap_reg_NG_cast_def_0_1261_jpeg_run.log"}
+{"tag": "ram_gap_reg_NG_cast_def_0_1446_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.15}
+{"tag": "ram_gap_reg_NG_cast_def_0_1446_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.47}
+{"tag": "ram_gap_reg_NG_cast_def_0_1446_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.69, "plusargs": ["+SRC=verification/core/NG_cast_def_0_1446.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1446.jpeg.pts.hex", "+N=400", "+NOUT=400"], "log": "logs/ram_gap_reg_NG_cast_def_0_1446_jpeg_run.log"}
+{"tag": "ram_gap_reg_NG_cast_def_0_5244_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.15}
+{"tag": "ram_gap_reg_NG_cast_def_0_5244_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.6}
+{"tag": "ram_gap_reg_NG_cast_def_0_5244_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.55, "plusargs": ["+SRC=verification/core/NG_cast_def_0_5244.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_5244.jpeg.pts.hex", "+N=366", "+NOUT=366"], "log": "logs/ram_gap_reg_NG_cast_def_0_5244_jpeg_run.log"}
+{"tag": "ram_gap_reg_OK_cast_ok_0_1074_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.15}
+{"tag": "ram_gap_reg_OK_cast_ok_0_1074_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.53}
+{"tag": "ram_gap_reg_OK_cast_ok_0_1074_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.76, "plusargs": ["+SRC=verification/core/OK_cast_ok_0_1074.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1074.jpeg.pts.hex", "+N=406", "+NOUT=406"], "log": "logs/ram_gap_reg_OK_cast_ok_0_1074_jpeg_run.log"}
+{"tag": "ram_gap_reg_OK_cast_ok_0_129_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.16}
+{"tag": "ram_gap_reg_OK_cast_ok_0_129_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.49}
+{"tag": "ram_gap_reg_OK_cast_ok_0_129_jpeg", "stage": "vvp", "exit": 0, "seconds": 0.57, "plusargs": ["+SRC=verification/core/OK_cast_ok_0_129.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_129.jpeg.pts.hex", "+N=360", "+NOUT=360"], "log": "logs/ram_gap_reg_OK_cast_ok_0_129_jpeg_run.log"}
+{"tag": "ram_gap_reg_OK_cast_ok_0_1853_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.15}
+{"tag": "ram_gap_reg_OK_cast_ok_0_1853_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.49}
+{"tag": "ram_gap_reg_OK_cast_ok_0_1853_jpeg", "stage": "vvp", "exit": 0, "seconds": 1.54, "plusargs": ["+SRC=verification/core/OK_cast_ok_0_1853.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1853.jpeg.pts.hex", "+N=420", "+NOUT=420"], "log": "logs/ram_gap_reg_OK_cast_ok_0_1853_jpeg_run.log"}
+{"tag": "ram_gap_reg_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.16}
+{"tag": "ram_gap_reg_worn", "stage": "ivl", "exit": 0, "seconds": 0.7}
+{"tag": "ram_gap_reg_worn", "stage": "vvp", "exit": 0, "seconds": 0.92, "plusargs": ["+SRC=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.pts.hex", "+N=318", "+NOUT=245"], "log": "logs/ram_gap_reg_worn_run.log"}
+{"tag": "ram_gap_early", "stage": "ivlpp", "exit": 0, "seconds": 1.19}
+{"tag": "ram_gap_early", "stage": "ivl", "exit": 0, "seconds": 1.53}
+{"tag": "ram_gap_early", "stage": "vvp", "exit": 0, "seconds": 4.1, "plusargs": [], "log": "logs/ram_gap_early_run.log"}
+{"tag": "ram_gap_core_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "ram_gap_core_worn", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "ram_gap_core_worn", "stage": "vvp", "exit": 0, "seconds": 10.9, "plusargs": ["+RAWN=318", "+N=245", "+PTS=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.exp.hex"], "log": "logs/ram_gap_core_worn_run.log"}
+{"tag": "ram_chain_NG_cast_def_0_1261_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "ram_chain_NG_cast_def_0_1261_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "ram_chain_NG_cast_def_0_1261_jpeg", "stage": "vvp", "exit": 0, "seconds": 12.42, "plusargs": ["+RAWN=389", "+N=389", "+PTS=verification/core/NG_cast_def_0_1261.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1261.jpeg.exp.hex"], "log": "logs/ram_chain_NG_cast_def_0_1261_jpeg_run.log"}
+{"tag": "ram_chain_NG_cast_def_0_1446_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "ram_chain_NG_cast_def_0_1446_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.23}
+{"tag": "ram_chain_NG_cast_def_0_1446_jpeg", "stage": "vvp", "exit": 0, "seconds": 13.67, "plusargs": ["+RAWN=400", "+N=400", "+PTS=verification/core/NG_cast_def_0_1446.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_1446.jpeg.exp.hex"], "log": "logs/ram_chain_NG_cast_def_0_1446_jpeg_run.log"}
+{"tag": "ram_chain_NG_cast_def_0_5244_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "ram_chain_NG_cast_def_0_5244_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.25}
+{"tag": "ram_chain_NG_cast_def_0_5244_jpeg", "stage": "vvp", "exit": 0, "seconds": 13.41, "plusargs": ["+RAWN=366", "+N=366", "+PTS=verification/core/NG_cast_def_0_5244.jpeg.pts.hex", "+EXP=verification/gap_probe/NG_cast_def_0_5244.jpeg.exp.hex"], "log": "logs/ram_chain_NG_cast_def_0_5244_jpeg_run.log"}
+{"tag": "ram_chain_OK_cast_ok_0_1074_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "ram_chain_OK_cast_ok_0_1074_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.23}
+{"tag": "ram_chain_OK_cast_ok_0_1074_jpeg", "stage": "vvp", "exit": 0, "seconds": 16.16, "plusargs": ["+RAWN=406", "+N=406", "+PTS=verification/core/OK_cast_ok_0_1074.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1074.jpeg.exp.hex"], "log": "logs/ram_chain_OK_cast_ok_0_1074_jpeg_run.log"}
+{"tag": "ram_chain_OK_cast_ok_0_129_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "ram_chain_OK_cast_ok_0_129_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.24}
+{"tag": "ram_chain_OK_cast_ok_0_129_jpeg", "stage": "vvp", "exit": 0, "seconds": 19.89, "plusargs": ["+RAWN=360", "+N=360", "+PTS=verification/core/OK_cast_ok_0_129.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_129.jpeg.exp.hex"], "log": "logs/ram_chain_OK_cast_ok_0_129_jpeg_run.log"}
+{"tag": "ram_chain_OK_cast_ok_0_1853_jpeg", "stage": "ivlpp", "exit": 0, "seconds": 0.23}
+{"tag": "ram_chain_OK_cast_ok_0_1853_jpeg", "stage": "ivl", "exit": 0, "seconds": 0.42}
+{"tag": "ram_chain_OK_cast_ok_0_1853_jpeg", "stage": "vvp", "exit": 0, "seconds": 17.8, "plusargs": ["+RAWN=420", "+N=420", "+PTS=verification/core/OK_cast_ok_0_1853.jpeg.pts.hex", "+EXP=verification/gap_probe/OK_cast_ok_0_1853.jpeg.exp.hex"], "log": "logs/ram_chain_OK_cast_ok_0_1853_jpeg_run.log"}
+{"tag": "ram_chain_worn", "stage": "ivlpp", "exit": 0, "seconds": 0.11}
+{"tag": "ram_chain_worn", "stage": "ivl", "exit": 0, "seconds": 0.34}
+{"tag": "ram_chain_worn", "stage": "vvp", "exit": 0, "seconds": 10.75, "plusargs": ["+RAWN=318", "+N=245", "+PTS=verification/user_worn_1/photo.pts.hex", "+EXP=verification/gap_probe/worn.exp.hex"], "log": "logs/ram_chain_worn_run.log"}
+{"tag": "gap_fsm_repeat", "stage": "ivlpp", "exit": 0, "seconds": 0.44}
+{"tag": "gap_fsm_repeat", "stage": "ivl", "exit": 0, "seconds": 0.68}
+{"tag": "gap_fsm_repeat", "stage": "vvp", "exit": 0, "seconds": 0.69, "plusargs": [], "log": "logs/gap_fsm_repeat_run.log"}
+{"tag": "qq_six_1_scan", "stage": "ivlpp", "exit": 0, "seconds": 0.21}
+{"tag": "qq_six_1_scan", "stage": "ivl", "exit": 0, "seconds": 0.49}
+{"tag": "qq_six_1_scan", "stage": "vvp", "exit": 0, "seconds": 31.78, "plusargs": ["+NEXP=335", "+VEC=verification/qq_six_trial/image1", "+GOT=verification/qq_six_trial/image1/actual_pts.hex"], "log": "logs/qq_six_1_scan_run.log"}
+{"tag": "qq_six_1_gap_core", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "qq_six_1_gap_core", "stage": "ivl", "exit": 0, "seconds": 0.27}
+{"tag": "qq_six_1_gap_core", "stage": "vvp", "exit": 0, "seconds": 11.91, "plusargs": ["+RAWN=335", "+N=335", "+PTS=verification/qq_six_trial/image1/raw.pts.hex", "+EXP=verification/qq_six_trial/image1/filtered.exp.hex"], "log": "logs/qq_six_1_gap_core_run.log"}
+{"tag": "qq_six_2_scan", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "qq_six_2_scan", "stage": "ivl", "exit": 0, "seconds": 0.19}
+{"tag": "qq_six_2_scan", "stage": "vvp", "exit": 0, "seconds": 33.54, "plusargs": ["+NEXP=327", "+VEC=verification/qq_six_trial/image2", "+GOT=verification/qq_six_trial/image2/actual_pts.hex"], "log": "logs/qq_six_2_scan_run.log"}
+{"tag": "qq_six_2_gap_core", "stage": "ivlpp", "exit": 0, "seconds": 0.24}
+{"tag": "qq_six_2_gap_core", "stage": "ivl", "exit": 0, "seconds": 0.34}
+{"tag": "qq_six_2_gap_core", "stage": "vvp", "exit": 0, "seconds": 11.74, "plusargs": ["+RAWN=327", "+N=327", "+PTS=verification/qq_six_trial/image2/raw.pts.hex", "+EXP=verification/qq_six_trial/image2/filtered.exp.hex"], "log": "logs/qq_six_2_gap_core_run.log"}
+{"tag": "qq_six_3_scan", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "qq_six_3_scan", "stage": "ivl", "exit": 0, "seconds": 0.19}
+{"tag": "qq_six_3_scan", "stage": "vvp", "exit": 0, "seconds": 32.38, "plusargs": ["+NEXP=352", "+VEC=verification/qq_six_trial/image3", "+GOT=verification/qq_six_trial/image3/actual_pts.hex"], "log": "logs/qq_six_3_scan_run.log"}
+{"tag": "qq_six_3_gap_core", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "qq_six_3_gap_core", "stage": "ivl", "exit": 0, "seconds": 0.22}
+{"tag": "qq_six_3_gap_core", "stage": "vvp", "exit": 0, "seconds": 12.52, "plusargs": ["+RAWN=352", "+N=352", "+PTS=verification/qq_six_trial/image3/raw.pts.hex", "+EXP=verification/qq_six_trial/image3/filtered.exp.hex"], "log": "logs/qq_six_3_gap_core_run.log"}
+{"tag": "qq_six_4_scan", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "qq_six_4_scan", "stage": "ivl", "exit": 0, "seconds": 0.19}
+{"tag": "qq_six_4_scan", "stage": "vvp", "exit": 0, "seconds": 31.45, "plusargs": ["+NEXP=379", "+VEC=verification/qq_six_trial/image4", "+GOT=verification/qq_six_trial/image4/actual_pts.hex"], "log": "logs/qq_six_4_scan_run.log"}
+{"tag": "qq_six_4_gap_core", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "qq_six_4_gap_core", "stage": "ivl", "exit": 0, "seconds": 0.21}
+{"tag": "qq_six_4_gap_core", "stage": "vvp", "exit": 0, "seconds": 12.83, "plusargs": ["+RAWN=379", "+N=379", "+PTS=verification/qq_six_trial/image4/raw.pts.hex", "+EXP=verification/qq_six_trial/image4/filtered.exp.hex"], "log": "logs/qq_six_4_gap_core_run.log"}
+{"tag": "qq_six_5_scan", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "qq_six_5_scan", "stage": "ivl", "exit": 0, "seconds": 0.19}
+{"tag": "qq_six_5_scan", "stage": "vvp", "exit": 0, "seconds": 31.97, "plusargs": ["+NEXP=340", "+VEC=verification/qq_six_trial/image5", "+GOT=verification/qq_six_trial/image5/actual_pts.hex"], "log": "logs/qq_six_5_scan_run.log"}
+{"tag": "qq_six_5_gap_core", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "qq_six_5_gap_core", "stage": "ivl", "exit": 0, "seconds": 0.21}
+{"tag": "qq_six_5_gap_core", "stage": "vvp", "exit": 0, "seconds": 11.48, "plusargs": ["+RAWN=340", "+N=340", "+PTS=verification/qq_six_trial/image5/raw.pts.hex", "+EXP=verification/qq_six_trial/image5/filtered.exp.hex"], "log": "logs/qq_six_5_gap_core_run.log"}
+{"tag": "qq_six_6_scan", "stage": "ivlpp", "exit": 0, "seconds": 0.09}
+{"tag": "qq_six_6_scan", "stage": "ivl", "exit": 0, "seconds": 0.19}
+{"tag": "qq_six_6_scan", "stage": "vvp", "exit": 0, "seconds": 31.6, "plusargs": ["+NEXP=276", "+VEC=verification/qq_six_trial/image6", "+GOT=verification/qq_six_trial/image6/actual_pts.hex"], "log": "logs/qq_six_6_scan_run.log"}
+{"tag": "qq_six_6_gap_core", "stage": "ivlpp", "exit": 0, "seconds": 0.1}
+{"tag": "qq_six_6_gap_core", "stage": "ivl", "exit": 0, "seconds": 0.22}
+{"tag": "qq_six_6_gap_core", "stage": "vvp", "exit": 0, "seconds": 9.46, "plusargs": ["+RAWN=276", "+N=276", "+PTS=verification/qq_six_trial/image6/raw.pts.hex", "+EXP=verification/qq_six_trial/image6/filtered.exp.hex"], "log": "logs/qq_six_6_gap_core_run.log"}

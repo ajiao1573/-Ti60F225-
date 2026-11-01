@@ -1,0 +1,46 @@
+[
+  {
+    "model": "pinhole",
+    "views": [
+      {
+        "file": "C:\\Users\\aj150\\Desktop\\FPGA\\B_web_autoplate\\docs\\calibration\\holdout\\pose11.png",
+        "rms_pixels": 0.04394519583944281,
+        "native_rms_pixels": 0.2636711750366569,
+        "line_error_before": 0.0865308440440011,
+        "line_error_after": 0.023808433950807686
+      },
+      {
+        "file": "C:\\Users\\aj150\\Desktop\\FPGA\\B_web_autoplate\\docs\\calibration\\holdout\\pose12.png",
+        "rms_pixels": 0.07903350381132913,
+        "native_rms_pixels": 0.47420102286797483,
+        "line_error_before": 0.1371358479754071,
+        "line_error_after": 0.03952324344235961
+      }
+    ],
+    "mean_native_rms_pixels": 0.3689360989523158,
+    "minimum_sampled_jacobian": 0.7590050030203975,
+    "no_sampled_folds": true
+  },
+  {
+    "model": "fisheye",
+    "views": [
+      {
+        "file": "C:\\Users\\aj150\\Desktop\\FPGA\\B_web_autoplate\\docs\\calibration\\holdout\\pose11.png",
+        "rms_pixels": 0.04255382417812754,
+        "native_rms_pixels": 0.25532294506876524,
+        "line_error_before": 0.0865308440440011,
+        "line_error_after": 0.023832679725112264
+      },
+      {
+        "file": "C:\\Users\\aj150\\Desktop\\FPGA\\B_web_autoplate\\docs\\calibration\\holdout\\pose12.png",
+        "rms_pixels": 0.07917125514689867,
+        "native_rms_pixels": 0.47502753088139205,
+        "line_error_before": 0.1371358479754071,
+        "line_error_after": 0.03960405967563444
+      }
+    ],
+    "mean_native_rms_pixels": 0.36517523797507867,
+    "minimum_sampled_jacobian": 0.7732505322934173,
+    "no_sampled_folds": true
+  }
+]

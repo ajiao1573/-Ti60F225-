@@ -1,0 +1,592 @@
+{
+  "config": {
+    "W": 48,
+    "H": 32,
+    "frames": 16,
+    "THR": 27,
+    "mode": 3,
+    "root": "E:\\codex\\codex_lib\\ti60_A_960x720_60fps_noise"
+  },
+  "source_sha256": {
+    "src/canny/canny_frontend.v": "8d0979fcc837b56796cab5ddac97c61e0c60fe0329d26ee40234944806698f11",
+    "src/canny/canny_frame.v": "40cf3a28d344922817b18fac1a2b3f107ff001161c692ccfce076f304821019b",
+    "src/canny/canny_local_link.v": "5d5589b64b78057b74d89623369fb36d89edd31ee330ebd963c296847cd69db7",
+    "src/camera_rgb_smooth.v": "aa795de4b70910fff13d8d024b05d6cdf9daa3acf46ea34487d4167ea1d8fae8",
+    "src/camera_rgb_denoise.v": "c64d8c71fd01b96e21fcd8d4b68acbc1fd6dd32b595596ce90c65ae2e1cb3f70",
+    "tests/noise_model.py": "40211c0d6deadf2d1d40a6bae859ed1c735410b381e09227c49fa38d93c0c141"
+  },
+  "metrics": {
+    "flat12": {
+      "baseline2": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "safe_anchor4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      }
+    },
+    "flat24": {
+      "baseline2": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 11,
+        "background": 11,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 16,
+        "background": 15,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 11,
+        "background": 11,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 16,
+        "background": 15,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "safe_anchor4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 16,
+        "background": 15,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      }
+    },
+    "shadow12": {
+      "baseline2": {
+        "rows": 88,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 144,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 123,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 196,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 218,
+        "possible_rows": 308,
+        "max_gap": 12,
+        "flips": 148,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 124
+      },
+      "anchor4": {
+        "rows": 267,
+        "possible_rows": 308,
+        "max_gap": 10,
+        "flips": 177,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 124
+      },
+      "safe_anchor4": {
+        "rows": 267,
+        "possible_rows": 308,
+        "max_gap": 10,
+        "flips": 177,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 124
+      }
+    },
+    "shadow16": {
+      "baseline2": {
+        "rows": 307,
+        "possible_rows": 308,
+        "max_gap": 1,
+        "flips": 244,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 307,
+        "possible_rows": 308,
+        "max_gap": 1,
+        "flips": 244,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 307,
+        "possible_rows": 308,
+        "max_gap": 1,
+        "flips": 101,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 353
+      },
+      "anchor4": {
+        "rows": 307,
+        "possible_rows": 308,
+        "max_gap": 1,
+        "flips": 101,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 353
+      },
+      "safe_anchor4": {
+        "rows": 307,
+        "possible_rows": 308,
+        "max_gap": 1,
+        "flips": 101,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 353
+      }
+    },
+    "shadow24": {
+      "baseline2": {
+        "rows": 288,
+        "possible_rows": 308,
+        "max_gap": 3,
+        "flips": 126,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 288,
+        "possible_rows": 308,
+        "max_gap": 3,
+        "flips": 126,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 302,
+        "possible_rows": 308,
+        "max_gap": 2,
+        "flips": 59,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 358
+      },
+      "anchor4": {
+        "rows": 302,
+        "possible_rows": 308,
+        "max_gap": 2,
+        "flips": 59,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 358
+      },
+      "safe_anchor4": {
+        "rows": 302,
+        "possible_rows": 308,
+        "max_gap": 2,
+        "flips": 59,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 358
+      }
+    },
+    "thin24": {
+      "baseline2": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "safe_anchor4": {
+        "rows": 0,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      }
+    },
+    "thin48": {
+      "baseline2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 198,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 192,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 2,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 834
+      },
+      "anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 2,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 834
+      },
+      "safe_anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 2,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 834
+      }
+    },
+    "line2": {
+      "baseline2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 14,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 14,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 840
+      },
+      "anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 840
+      },
+      "safe_anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 0,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 840
+      }
+    },
+    "diagonal2": {
+      "baseline2": {
+        "rows": 282,
+        "possible_rows": 308,
+        "max_gap": 8,
+        "flips": 498,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 300,
+        "possible_rows": 308,
+        "max_gap": 4,
+        "flips": 407,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 236,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 779
+      },
+      "anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 236,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 779
+      },
+      "safe_anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 236,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 779
+      }
+    },
+    "moving": {
+      "baseline2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 562,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 562,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 340,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 178
+      },
+      "anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 340,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 178
+      },
+      "safe_anchor4": {
+        "rows": 308,
+        "possible_rows": 308,
+        "max_gap": 0,
+        "flips": 340,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 178
+      }
+    },
+    "disappear": {
+      "baseline2": {
+        "rows": 132,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 34,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "link4": {
+        "rows": 132,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 34,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 0
+      },
+      "anchor2": {
+        "rows": 132,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 30,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 180
+      },
+      "anchor4": {
+        "rows": 132,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 30,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 180
+      },
+      "safe_anchor4": {
+        "rows": 132,
+        "possible_rows": 308,
+        "max_gap": 22,
+        "flips": 30,
+        "background": 0,
+        "trailing": 0,
+        "after_disappear": 0,
+        "held": 180
+      }
+    }
+  }
+}

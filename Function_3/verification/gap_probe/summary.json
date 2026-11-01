@@ -1,0 +1,65 @@
+[
+  {
+    "name": "NG_cast_def_0_1261.jpeg",
+    "gap": 9,
+    "cut": null,
+    "removed": 0,
+    "predicted": "NG",
+    "acc": 4498104,
+    "reason": "ok"
+  },
+  {
+    "name": "NG_cast_def_0_1446.jpeg",
+    "gap": 6,
+    "cut": null,
+    "removed": 0,
+    "predicted": "NG",
+    "acc": 9154905,
+    "reason": "ok"
+  },
+  {
+    "name": "NG_cast_def_0_5244.jpeg",
+    "gap": 6,
+    "cut": null,
+    "removed": 0,
+    "predicted": "NG",
+    "acc": 2940774,
+    "reason": "ok"
+  },
+  {
+    "name": "OK_cast_ok_0_1074.jpeg",
+    "gap": 6,
+    "cut": null,
+    "removed": 0,
+    "predicted": "OK",
+    "acc": -6298217,
+    "reason": "ok"
+  },
+  {
+    "name": "OK_cast_ok_0_129.jpeg",
+    "gap": 12,
+    "cut": null,
+    "removed": 0,
+    "predicted": "OK",
+    "acc": -5517479,
+    "reason": "ok"
+  },
+  {
+    "name": "OK_cast_ok_0_1853.jpeg",
+    "gap": 6,
+    "cut": null,
+    "removed": 0,
+    "predicted": "OK",
+    "acc": -5721957,
+    "reason": "ok"
+  },
+  {
+    "name": "worn",
+    "gap": 124,
+    "cut": 638,
+    "removed": 73,
+    "predicted": "OK",
+    "acc": -5325003,
+    "reason": "ok"
+  }
+]

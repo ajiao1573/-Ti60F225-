@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "width": 64,
+  "height": 33,
+  "accepted_and_completed_frames": 3,
+  "canny_pixels": 6336,
+  "rearm_pulses": 3,
+  "source": "exact extracted top-level control/status/core instance; real autoplate/Canny RTL",
+  "top_sha256": "1391788819907ccbc968e749d36eb069c4d32e3674945f2b94d9ba1af9c896d6",
+  "hardware_test": false
+}

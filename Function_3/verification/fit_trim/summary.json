@@ -1,0 +1,300 @@
+[
+  {
+    "tag": "NG_cast_def_0_1261.jpeg",
+    "before": 389,
+    "after": 386,
+    "center": [
+      476,
+      356
+    ],
+    "median_distance2": 87300,
+    "removed_indices": [
+      0,
+      104,
+      285
+    ],
+    "result": {
+      "tag": "NG_cast_def_0_1261.jpeg",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 386,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": -126254,
+      "n_median_set": 366,
+      "features": {
+        "OUT_MAX": 60,
+        "IN_MAX": 15,
+        "OUT_FRAC": 310,
+        "IN_FRAC": 171,
+        "OUT_AREA": 10,
+        "OUT_STD": 13,
+        "OUT_RUN": 13,
+        "COVER": 560,
+        "GCONTRAST": 45,
+        "GWEAK8": 13,
+        "PROTECT": 798,
+        "ARATIO": 1116,
+        "RN": 422
+      },
+      "n_admit": 258,
+      "reason": "ok",
+      "classifier_accumulator": 5672062,
+      "predicted": "NG"
+    }
+  },
+  {
+    "tag": "NG_cast_def_0_1446.jpeg",
+    "before": 400,
+    "after": 400,
+    "center": [
+      500,
+      371
+    ],
+    "median_distance2": 90000,
+    "removed_indices": [],
+    "result": {
+      "tag": "NG_cast_def_0_1446.jpeg",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 400,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": -188196,
+      "n_median_set": 399,
+      "features": {
+        "OUT_MAX": 57,
+        "IN_MAX": 15,
+        "OUT_FRAC": 394,
+        "IN_FRAC": 253,
+        "OUT_AREA": 17,
+        "OUT_STD": 17,
+        "OUT_RUN": 20,
+        "COVER": 642,
+        "GCONTRAST": 45,
+        "GWEAK8": 15,
+        "PROTECT": 720,
+        "ARATIO": 1079,
+        "RN": 431
+      },
+      "n_admit": 296,
+      "reason": "ok",
+      "classifier_accumulator": 9154905,
+      "predicted": "NG"
+    }
+  },
+  {
+    "tag": "NG_cast_def_0_5244.jpeg",
+    "before": 366,
+    "after": 366,
+    "center": [
+      482,
+      375
+    ],
+    "median_distance2": 77519,
+    "removed_indices": [],
+    "result": {
+      "tag": "NG_cast_def_0_5244.jpeg",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 366,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": 50829,
+      "n_median_set": 358,
+      "features": {
+        "OUT_MAX": 50,
+        "IN_MAX": 15,
+        "OUT_FRAC": 332,
+        "IN_FRAC": 279,
+        "OUT_AREA": 9,
+        "OUT_STD": 14,
+        "OUT_RUN": 13,
+        "COVER": 549,
+        "GCONTRAST": 42,
+        "GWEAK8": 17,
+        "PROTECT": 571,
+        "ARATIO": 1099,
+        "RN": 397
+      },
+      "n_admit": 253,
+      "reason": "ok",
+      "classifier_accumulator": 2940774,
+      "predicted": "NG"
+    }
+  },
+  {
+    "tag": "OK_cast_ok_0_1074.jpeg",
+    "before": 406,
+    "after": 406,
+    "center": [
+      485,
+      341
+    ],
+    "median_distance2": 94570,
+    "removed_indices": [],
+    "result": {
+      "tag": "OK_cast_ok_0_1074.jpeg",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 406,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": -196238,
+      "n_median_set": 404,
+      "features": {
+        "OUT_MAX": 18,
+        "IN_MAX": 9,
+        "OUT_FRAC": 129,
+        "IN_FRAC": 8,
+        "OUT_AREA": 1,
+        "OUT_STD": 4,
+        "OUT_RUN": 12,
+        "COVER": 846,
+        "GCONTRAST": 61,
+        "GWEAK8": 15,
+        "PROTECT": 927,
+        "ARATIO": 1129,
+        "RN": 438
+      },
+      "n_admit": 390,
+      "reason": "ok",
+      "classifier_accumulator": -6298217,
+      "predicted": "OK"
+    }
+  },
+  {
+    "tag": "OK_cast_ok_0_129.jpeg",
+    "before": 360,
+    "after": 360,
+    "center": [
+      488,
+      377
+    ],
+    "median_distance2": 77737,
+    "removed_indices": [],
+    "result": {
+      "tag": "OK_cast_ok_0_129.jpeg",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 360,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": 95254,
+      "n_median_set": 357,
+      "features": {
+        "OUT_MAX": 46,
+        "IN_MAX": 15,
+        "OUT_FRAC": 144,
+        "IN_FRAC": 181,
+        "OUT_AREA": 3,
+        "OUT_STD": 8,
+        "OUT_RUN": 5,
+        "COVER": 664,
+        "GCONTRAST": 37,
+        "GWEAK8": 10,
+        "PROTECT": 482,
+        "ARATIO": 1144,
+        "RN": 404
+      },
+      "n_admit": 306,
+      "reason": "ok",
+      "classifier_accumulator": -5517479,
+      "predicted": "OK"
+    }
+  },
+  {
+    "tag": "OK_cast_ok_0_1853.jpeg",
+    "before": 420,
+    "after": 420,
+    "center": [
+      479,
+      329
+    ],
+    "median_distance2": 106287,
+    "removed_indices": [],
+    "result": {
+      "tag": "OK_cast_ok_0_1853.jpeg",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 420,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": -177826,
+      "n_median_set": 415,
+      "features": {
+        "OUT_MAX": 19,
+        "IN_MAX": 9,
+        "OUT_FRAC": 115,
+        "IN_FRAC": 8,
+        "OUT_AREA": 1,
+        "OUT_STD": 4,
+        "OUT_RUN": 9,
+        "COVER": 870,
+        "GCONTRAST": 61,
+        "GWEAK8": 16,
+        "PROTECT": 935,
+        "ARATIO": 1083,
+        "RN": 456
+      },
+      "n_admit": 401,
+      "reason": "ok",
+      "classifier_accumulator": -5721957,
+      "predicted": "OK"
+    }
+  },
+  {
+    "tag": "worn",
+    "before": 318,
+    "after": 298,
+    "center": [
+      416,
+      452
+    ],
+    "median_distance2": 67375,
+    "removed_indices": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233
+    ],
+    "result": {
+      "tag": "worn",
+      "note": "median radial outlier prefilter, exploratory",
+      "n_points": 298,
+      "checkpoints": 115,
+      "iterations": 3,
+      "med2": 1288242,
+      "n_median_set": 115,
+      "features": {
+        "OUT_MAX": 58,
+        "IN_MAX": 14,
+        "OUT_FRAC": 642,
+        "IN_FRAC": 150,
+        "OUT_AREA": 11,
+        "OUT_STD": 27,
+        "OUT_RUN": 7,
+        "COVER": 163,
+        "GCONTRAST": 40,
+        "GWEAK8": 27,
+        "PROTECT": 887,
+        "ARATIO": 1644,
+        "RN": 363
+      },
+      "n_admit": 75,
+      "reason": "ok",
+      "classifier_accumulator": 29215082,
+      "predicted": "NG"
+    }
+  }
+]

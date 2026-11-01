@@ -1,0 +1,258 @@
+{
+  "source": "E:\\codex\\codex_lib\\ti60_B_web_autoplate_20261028\\tests\\generated\\autoplate_core_small_case1_roi.hex",
+  "white_threshold": 156,
+  "results": {
+    "adaptive": {
+      "boxes": [
+        [
+          66,
+          97,
+          26,
+          75
+        ],
+        [
+          105,
+          132,
+          26,
+          75
+        ],
+        [
+          141,
+          167,
+          26,
+          74
+        ],
+        [
+          175,
+          202,
+          26,
+          75
+        ],
+        [
+          208,
+          239,
+          18,
+          73
+        ],
+        [
+          242,
+          248,
+          18,
+          82
+        ]
+      ],
+      "scores": [
+        {
+          "character": "U",
+          "error": 83,
+          "margin": 67,
+          "valid": true
+        },
+        {
+          "character": "Y",
+          "error": 21,
+          "margin": 98,
+          "valid": true
+        },
+        {
+          "character": "3",
+          "error": 68,
+          "margin": 76,
+          "valid": true
+        },
+        {
+          "character": "5",
+          "error": 55,
+          "margin": 131,
+          "valid": true
+        },
+        {
+          "character": "9",
+          "error": 162,
+          "margin": 15,
+          "valid": false
+        },
+        {
+          "character": "1",
+          "error": 93,
+          "margin": 38,
+          "valid": false
+        }
+      ],
+      "ascii": "UY3591",
+      "valid": false
+    },
+    "white_rows": {
+      "boxes": [
+        [
+          21,
+          28,
+          30,
+          53
+        ],
+        [
+          31,
+          59,
+          26,
+          75
+        ],
+        [
+          66,
+          97,
+          26,
+          75
+        ],
+        [
+          105,
+          132,
+          26,
+          75
+        ],
+        [
+          141,
+          167,
+          26,
+          74
+        ],
+        [
+          175,
+          202,
+          26,
+          75
+        ],
+        [
+          208,
+          235,
+          26,
+          73
+        ]
+      ],
+      "scores": [
+        {
+          "character": "I",
+          "error": 111,
+          "margin": 44,
+          "valid": true
+        },
+        {
+          "character": "A",
+          "error": 67,
+          "margin": 131,
+          "valid": true
+        },
+        {
+          "character": "U",
+          "error": 83,
+          "margin": 67,
+          "valid": true
+        },
+        {
+          "character": "7",
+          "error": 110,
+          "margin": 26,
+          "valid": false
+        },
+        {
+          "character": "3",
+          "error": 68,
+          "margin": 76,
+          "valid": true
+        },
+        {
+          "character": "5",
+          "error": 55,
+          "margin": 131,
+          "valid": true
+        },
+        {
+          "character": "9",
+          "error": 102,
+          "margin": 66,
+          "valid": true
+        }
+      ],
+      "ascii": "IAU7359",
+      "valid": false
+    },
+    "white_both": {
+      "boxes": [
+        [
+          31,
+          59,
+          26,
+          75
+        ],
+        [
+          67,
+          97,
+          26,
+          75
+        ],
+        [
+          105,
+          132,
+          26,
+          75
+        ],
+        [
+          141,
+          167,
+          26,
+          74
+        ],
+        [
+          175,
+          202,
+          26,
+          75
+        ],
+        [
+          208,
+          232,
+          26,
+          73
+        ]
+      ],
+      "scores": [
+        {
+          "character": "A",
+          "error": 67,
+          "margin": 131,
+          "valid": true
+        },
+        {
+          "character": "U",
+          "error": 81,
+          "margin": 46,
+          "valid": true
+        },
+        {
+          "character": "Y",
+          "error": 21,
+          "margin": 98,
+          "valid": true
+        },
+        {
+          "character": "3",
+          "error": 68,
+          "margin": 76,
+          "valid": true
+        },
+        {
+          "character": "5",
+          "error": 63,
+          "margin": 115,
+          "valid": true
+        },
+        {
+          "character": "9",
+          "error": 137,
+          "margin": 12,
+          "valid": true
+        }
+      ],
+      "ascii": "AUY359",
+      "valid": true
+    }
+  }
+}

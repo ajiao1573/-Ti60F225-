@@ -1,0 +1,8 @@
+[
+  "example_top.v",
+  "src/canny/canny_frame.v",
+  "src/canny/canny_frontend.v",
+  "src/canny/canny_peak_history.v",
+  "src/canny/canny_rtl.vh",
+  "Ti60_Demo.xml"
+]
