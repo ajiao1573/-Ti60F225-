@@ -1,0 +1,42 @@
+# Efinity compilation output and working directories.
+# Keep RTL, ip/, project XML, pin configuration and timing constraints.
+/Function_*/work/
+/Function_*/work_*/
+/Function_*/outflow/
+/Function_*/output/
+/Function_*/combined_output/
+/Function_*/logs/
+
+# Generated simulation files and bitstreams.
+*.vvp
+*.vcd
+*.fst
+*.bit
+
+# Python caches and local virtual environments.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Host application build output and old executable backups.
+# Keep build_deps/, vendor/, licenses/ and the PyInstaller .spec file.
+/Host/build/
+/Host/dist/
+/Host/dist_*/
+/Host/backup_before_*/
+
+# Generated document previews; keep document source files and templates.
+/_doc_work/*render*/
+
+# Logs and temporary/editor files.
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+~$*
+.DS_Store
+Thumbs.db
+Desktop.ini
